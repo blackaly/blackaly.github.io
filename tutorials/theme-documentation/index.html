@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/tutorial-series.css">
+    <title>Shika Theme Documentation: Split Article Shortcode</title>
+</head>
+<body>
+    <header>
+        <a href="/tutorials" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>Back to tutorials</span>
+        </a>
+        <div class="container">
+            <span class="tutorial-badge">Tutorial</span>
+            <h1 class="bg-heading">Shika Theme Documentation: Split Article Shortcode</h1>
+            <div class="article-meta">
+                
+                <p class="article-date">April 7, 2024</p>
+                
+                
+                <div class="article-tags">
+                    
+                    <a href="/tags/documentation" class="tag-link">documentation</a>
+                    
+                    <a href="/tags/tutorial" class="tag-link">tutorial</a>
+                    
+                    <a href="/tags/theme" class="tag-link">theme</a>
+                    
+                    <a href="/tags/shortcodes" class="tag-link">shortcodes</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="tutorial-banner">
+                <img src="/img/theme-docs.jpg" alt="Shika Theme Documentation: Split Article Shortcode">
+            </div>
+            
+        </div>
+        <hr class="line">
+    </header>
+    <main>
+        <div class="main-container">
+            <article class="full-article fade-in">
+                <h1 id="shika-theme-documentation">Shika Theme Documentation</h1>
+<p>This guide will help you understand how to use the split article shortcode in the Shika theme. The split article shortcode is a powerful feature that allows you to create visually appealing comparisons or parallel content sections in your articles.</p>
+<h2 id="what-is-the-split-article-shortcode">What is the Split Article Shortcode?</h2>
+<p>The split article shortcode divides content into two sections (left and right) with a connector note in the middle. This layout is perfect for:</p>
+<ul>
+<li>Comparing two approaches, technologies, or methods</li>
+<li>Showing before/after examples</li>
+<li>Presenting cause and effect relationships</li>
+<li>Displaying translations side by side</li>
+<li>Creating timelines with detailed explanations</li>
+</ul>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>Here&rsquo;s the basic syntax for the split article shortcode:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;Your left section content here, can include **markdown**&#34; 
+    right=&#34;Your right section content here, can also include **markdown**&#34;
+    leftPoint=&#34;Description for left section&#34; 
+    rightPoint=&#34;Description for right section&#34;
+    note=&#34;A connecting note that ties the two sections together&#34;
+    direction=&#34;horizontal&#34; 
+&gt;}}
+</code></pre><h2 id="parameters">Parameters</h2>
+<p>The shortcode accepts the following parameters:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>left</td>
+<td>Content for the left section (supports markdown)</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>right</td>
+<td>Content for the right section (supports markdown)</td>
+<td>Required</td>
+</tr>
+<tr>
+<td>leftPoint</td>
+<td>Short description for the left section</td>
+<td>&ldquo;Left section&rdquo;</td>
+</tr>
+<tr>
+<td>rightPoint</td>
+<td>Short description for the right section</td>
+<td>&ldquo;Right section&rdquo;</td>
+</tr>
+<tr>
+<td>note</td>
+<td>A note that connects the two sections (supports markdown)</td>
+<td>Empty</td>
+</tr>
+<tr>
+<td>direction</td>
+<td>Layout direction: &ldquo;horizontal&rdquo; or &ldquo;vertical&rdquo;</td>
+<td>&ldquo;horizontal&rdquo;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="examples">Examples</h2>
+<h3 id="basic-comparison-example">Basic Comparison Example</h3>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;## CSS
+```css
+body {
+  background-color: black;
+  color: white;
+}
+```&#34; 
+    right=&#34;## SCSS
+```scss
+$bgcolor: black;
+$textcolor: white;
+
+body {
+  background-color: $bgcolor;
+  color: $textcolor;
+}
+```&#34;
+    leftPoint=&#34;Standard CSS&#34; 
+    rightPoint=&#34;SCSS with variables&#34;
+    note=&#34;Notice how SCSS allows you to define variables, making your code more maintainable.&#34;
+&gt;}}
+</code></pre><h3 id="vertical-layout-example">Vertical Layout Example</h3>
+<p>For content that flows better vertically (like chronological events):</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;## Planning Phase
+During the planning phase, we defined the project scope and created initial wireframes.&#34;
+    right=&#34;## Implementation Phase
+The implementation phase involved coding the frontend and backend components according to the specifications.&#34;
+    leftPoint=&#34;First phase&#34; 
+    rightPoint=&#34;Second phase&#34;
+    note=&#34;A good planning phase leads to smoother implementation.&#34;
+    direction=&#34;vertical&#34;
+&gt;}}
+</code></pre><h2 id="styling">Styling</h2>
+<p>The split article component uses responsive styling:</p>
+<ul>
+<li>On large screens, horizontal layouts show content side by side</li>
+<li>On small screens, the layout automatically switches to vertical for better readability</li>
+<li>The connector lines adjust based on the direction parameter</li>
+<li>The component uses your theme&rsquo;s color variables for a consistent look</li>
+</ul>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Keep content balanced</strong>: Try to maintain similar content length in both sections</li>
+<li><strong>Use headers wisely</strong>: Start each section with a header for clarity</li>
+<li><strong>Be concise in connection points</strong>: The leftPoint and rightPoint should be brief</li>
+<li><strong>Make the note meaningful</strong>: The connecting note should highlight the relationship between sections</li>
+<li><strong>Consider direction carefully</strong>: Choose horizontal for comparisons, vertical for sequential content</li>
+</ol>
+<h2 id="advanced-usage">Advanced Usage</h2>
+<p>You can nest other shortcodes within the split-article sections:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;## Desktop View
+{{&lt; figure src=\&#34;/images/desktop.png\&#34; caption=\&#34;Desktop layout\&#34; &gt;}}&#34;
+    right=&#34;## Mobile View
+{{&lt; figure src=\&#34;/images/mobile.png\&#34; caption=\&#34;Mobile layout\&#34; &gt;}}&#34;
+    leftPoint=&#34;Desktop&#34; 
+    rightPoint=&#34;Mobile&#34;
+    note=&#34;Our responsive design adjusts automatically to different screen sizes.&#34;
+&gt;}}
+</code></pre><h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Content not splitting correctly</strong>: Ensure you&rsquo;re using proper markdown syntax within the parameters</li>
+<li><strong>Connection lines not showing</strong>: Check if your theme&rsquo;s CSS variables are properly defined</li>
+<li><strong>Responsiveness issues</strong>: Make sure your content works well at different widths</li>
+</ul>
+<hr>
+<p>This documentation provides a comprehensive guide to using the split article shortcode in the Shika theme. Experiment with different combinations to create engaging and visually appealing content for your readers.</p>
+
+            
+                
+                <div class="tutorial-navigation">
+                    
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+
+                    <div class="tutorial-nav-links">
+                        
+                        
+                        <a href="/tutorials/theme-usage/" class="prev-tutorial">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous: Getting Started with Shika Theme</span>
+                        </a>
+                        
+
+                        
+                        
+                        <a href="/tutorials/split-article-examples/" class="next-tutorial">
+                            <span>Next: Split Article Shortcode: Practical Examples</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </article>
+        </div>
+    </main><footer class="container">
+    <p>© 2025 Ali Mashally Powered by Hugo</p>
+ </footer><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            setTimeout(function() {
+                document.querySelector('.fade-in').classList.add('active');
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

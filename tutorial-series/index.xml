@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial-series on My New Hugo Site</title>
+    <link>/tutorial-series/</link>
+    <description>Recent content in Tutorial-series on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Dec 2023 10:00:00 -0500</lastBuildDate><atom:link href="/tutorial-series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Development Basics</title>
+      <link>/tutorial-series/web-dev-basics/</link>
+      <pubDate>Sat, 30 Dec 2023 10:00:00 -0500</pubDate>
+      
+      <guid>/tutorial-series/web-dev-basics/</guid>
+      <description>This series covers the fundamental building blocks of web development. You&amp;rsquo;ll learn HTML for structure, CSS for styling, and JavaScript for interactivity - the three core technologies of the web.
+Perfect for beginners looking to start their web development journey. Each tutorial builds on the previous one, providing a comprehensive foundation for creating modern websites.</description>
+    </item>
+    
+  </channel>
+</rss>

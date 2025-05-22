@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/tutorial-series.css">
+    <title>Demonstrating the Split Article Connector</title>
+</head>
+<body>
+    <header>
+        <a href="/posts" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>Back to blog</span>
+        </a>
+        <div class="container">
+            <h1 class="bg-heading">Demonstrating the Split Article Connector</h1>
+            <div class="article-meta">
+                
+                <p class="article-date">December 30, 2023</p>
+                
+                
+                <div class="article-tags">
+                    
+                    <a href="/tags/demo" class="tag-link">demo</a>
+                    
+                    <a href="/tags/tutorial" class="tag-link">tutorial</a>
+                    
+                    <a href="/tags/features" class="tag-link">features</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="article-banner">
+                <img src="/img/technology.jpg" alt="Demonstrating the Split Article Connector">
+            </div>
+            
+        </div>
+        <hr class="line">
+    </header>
+    <main>
+        <div class="main-container">
+            <article class="full-article fade-in">
+                <h1 id="split-article-connector-demo">Split Article Connector Demo</h1>
+<p>This post demonstrates the split article connector feature, which allows you to create visual annotations that connect related points between two sections of content.</p>
+<h2 id="basic-example">Basic Example</h2>
+
+
+
+
+
+
+
+<div class="split-article ">
+    <div class="split-container">
+        <div class="split-section left-section">
+            <h3 id="web-development">Web Development</h3>
+<p>Web development involves creating websites and web applications using technologies like HTML, CSS, and JavaScript. Frontend development focuses on the user interface, while backend development handles server-side logic.
+        </div>
+        
+        <div class="split-section right-section">
+            <h3 id="mobile-development">Mobile Development</h3>
+<p>Mobile development involves creating applications for mobile devices like smartphones and tablets. Native apps are built for specific platforms (iOS, Android), while cross-platform solutions allow code sharing.
+        </div>
+    </div>
+    
+    <div class="content-connector horizontal-connector">
+        <div class="connector-lines">
+            <div class="connector-line left-line"></div>
+            <div class="connector-line right-line"></div>
+        </div>
+        <div class="connector-note">
+            <div class="note-content">
+                Both web and mobile development are essential skills in today&rsquo;s technology landscape, with increasing convergence through progressive web apps and responsive design.
+            </div>
+            <div class="connected-points">
+                <div class="connected-point left-point">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <span>Web technologies</span>
+                </div>
+                <div class="connected-point right-point">
+                    <span>Mobile technologies</span>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<h2 id="vertical-example">Vertical Example</h2>
+
+
+
+
+
+
+
+<div class="split-article vertical-split">
+    <div class="split-container">
+        <div class="split-section left-section">
+            <h3 id="traditional-marketing">Traditional Marketing</h3>
+<p>Traditional marketing uses channels such as print media, TV, radio, and billboards to reach audiences. It often has broader reach but can be harder to measure effectiveness.
+        </div>
+        
+        <div class="split-section right-section">
+            <h3 id="digital-marketing">Digital Marketing</h3>
+<p>Digital marketing uses online channels like social media, email, SEO, and paid ads to reach specific audiences. It offers detailed analytics and precise targeting capabilities.
+        </div>
+    </div>
+    
+    <div class="content-connector vertical-connector">
+        <div class="connector-lines">
+            <div class="connector-line left-line"></div>
+            <div class="connector-line right-line"></div>
+        </div>
+        <div class="connector-note">
+            <div class="note-content">
+                Most effective marketing strategies combine both traditional and digital approaches for maximum impact across different audience segments.
+            </div>
+            <div class="connected-points">
+                <div class="connected-point left-point">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <span>Classic approaches</span>
+                </div>
+                <div class="connected-point right-point">
+                    <span>Modern approaches</span>
+                    <i class="fa-solid fa-circle-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<h2 id="how-it-works">How It Works</h2>
+<p>The split-article connector feature uses a combination of HTML, CSS, and Hugo shortcodes to create visually appealing content comparisons with explanatory notes. The connector annotation visually bridges related concepts, helping readers understand relationships between different sections of content.</p>
+<h2 id="usage">Usage</h2>
+<p>To use this feature in your own content, simply add the split-article shortcode with your desired parameters:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+left=&#34;Left section content&#34;
+right=&#34;Right section content&#34;
+leftPoint=&#34;Left reference point&#34;
+rightPoint=&#34;Right reference point&#34;
+note=&#34;Connection explanation&#34;
+direction=&#34;horizontal&#34; &gt;}}
+</code></pre><p>The content supports Markdown formatting for rich text styling.</p>
+
+            
+                
+                <div class="tutorial-navigation">
+                    
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+
+                    <div class="tutorial-nav-links">
+                        
+                        
+                        <a href="/posts/distributed-systems/" class="prev-tutorial">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous: What is a Distributed System</span>
+                        </a>
+                        
+
+                        
+                    </div>
+                </div>
+                
+            </article>
+        </div>
+    </main><footer class="container">
+    <p>© 2025 Ali Mashally Powered by Hugo</p>
+ </footer><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            setTimeout(function() {
+                document.querySelector('.fade-in').classList.add('active');
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/tutorial-series.css">
+    <title>CSS Fundamentals: Styling the Web</title>
+</head>
+<body>
+    <header>
+        <a href="/tutorials" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>Back to tutorials</span>
+        </a>
+        <div class="container">
+            <span class="tutorial-badge">Tutorial</span>
+            <h1 class="bg-heading">CSS Fundamentals: Styling the Web</h1>
+            <div class="article-meta">
+                
+                <p class="article-date">January 2, 2024</p>
+                
+                
+            </div>
+            
+            <div class="tutorial-banner">
+                <img src="/img/css-fundamentals.jpg" alt="CSS Fundamentals: Styling the Web">
+            </div>
+            
+        </div>
+        <hr class="line">
+    </header>
+    <main>
+        <div class="main-container">
+            <article class="full-article fade-in">
+                <h1 id="css-fundamentals-styling-the-web">CSS Fundamentals: Styling the Web</h1>
+<p>Cascading Style Sheets (CSS) is the language used to style and layout web pages. It transforms plain HTML into visually appealing websites by controlling colors, fonts, spacing, and more.</p>
+<h2 id="what-youll-learn">What You&rsquo;ll Learn</h2>
+<p>In this tutorial, you&rsquo;ll learn:</p>
+<ul>
+<li>How to include CSS in your HTML</li>
+<li>Selectors and their specificity</li>
+<li>Essential CSS properties</li>
+<li>The box model concept</li>
+<li>Flexbox basics for layouts</li>
+</ul>
+<h2 id="including-css-in-html">Including CSS in HTML</h2>
+<p>There are three ways to include CSS in your HTML:</p>
+<h3 id="1-inline-css">1. Inline CSS</h3>
+<p>Applies to a specific HTML element using the <code>style</code> attribute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">style</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;color: blue; font-size: 18px;&#34;</span>&gt;This is a styled paragraph.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h3 id="2-internal-css">2. Internal CSS</h3>
+<p>Defined in the <code>&lt;head&gt;</code> section using the <code>&lt;style&gt;</code> tag:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">blue</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">style</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;This is a styled paragraph.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h3 id="3-external-css-recommended">3. External CSS (Recommended)</h3>
+<p>Defined in a separate .css file and linked in the HTML:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;styles.css&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">p</span>&gt;This is a styled paragraph.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><p>And in your styles.css file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">blue</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">18</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="css-selectors">CSS Selectors</h2>
+<p>Selectors determine which elements your styles will apply to:</p>
+<h3 id="element-selectors">Element Selectors</h3>
+<p>Target all elements of a specific type:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">blue</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="class-selectors">Class Selectors</h3>
+<p>Target elements with a specific class attribute:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">highlight</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">yellow</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;highlight&#34;</span>&gt;This paragraph has a yellow background.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h3 id="id-selectors">ID Selectors</h3>
+<p>Target a specific element with the given ID:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>#header {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">24</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h1</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;header&#34;</span>&gt;This is a large heading.&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span></code></pre></div><h3 id="combination-selectors">Combination Selectors</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#75715e">/* Descendant selector */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">article</span> <span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-style</span>: <span style="color:#66d9ef">italic</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Child selector */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">ul</span> <span style="color:#f92672">&gt;</span> <span style="color:#f92672">li</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">list-style-type</span>: <span style="color:#66d9ef">square</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Multiple selectors */</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">h1</span><span style="color:#f92672">,</span> <span style="color:#f92672">h2</span><span style="color:#f92672">,</span> <span style="color:#f92672">h3</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Arial, <span style="color:#66d9ef">sans-serif</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="essential-css-properties">Essential CSS Properties</h2>
+<h3 id="text-styling">Text Styling</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">p</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">color</span>: <span style="color:#ae81ff">#333</span>;                 <span style="color:#75715e">/* Text color */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-family</span>: Arial, <span style="color:#66d9ef">sans-serif</span>; <span style="color:#75715e">/* Font */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-size</span>: <span style="color:#ae81ff">16</span><span style="color:#66d9ef">px</span>;             <span style="color:#75715e">/* Font size */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">font-weight</span>: <span style="color:#66d9ef">bold</span>;           <span style="color:#75715e">/* Font weight */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">text-align</span>: <span style="color:#66d9ef">center</span>;          <span style="color:#75715e">/* Text alignment */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">line-height</span>: <span style="color:#ae81ff">1.5</span>;            <span style="color:#75715e">/* Line spacing */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="box-properties">Box Properties</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">div</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">lightgray</span>; <span style="color:#75715e">/* Background color */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;     <span style="color:#75715e">/* Border */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;               <span style="color:#75715e">/* Inner spacing */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>;                <span style="color:#75715e">/* Outer spacing */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;                <span style="color:#75715e">/* Width */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;               <span style="color:#75715e">/* Height */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="the-box-model">The Box Model</h2>
+<p>Every element in HTML is a box that consists of:</p>
+<ul>
+<li>Content: The actual content of the element</li>
+<li>Padding: Space between the content and the border</li>
+<li>Border: A line around the padding and content</li>
+<li>Margin: Space outside the border</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">5</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">30</span><span style="color:#66d9ef">px</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>By default, the <code>width</code> and <code>height</code> properties only control the content area. To include padding and border in the specified dimensions, use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">box</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">box-sizing</span>: <span style="color:#66d9ef">border-box</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">300</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* Total width including padding and border */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h2 id="flexbox-for-layout">Flexbox for Layout</h2>
+<p>Flexbox is a powerful layout system for arranging elements:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span>.<span style="color:#a6e22e">container</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">space-between</span>; <span style="color:#75715e">/* Horizontal distribution */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;            <span style="color:#75715e">/* Vertical alignment */</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">flex-wrap</span>: <span style="color:#66d9ef">wrap</span>;                <span style="color:#75715e">/* Allow items to wrap */</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item&#34;</span>&gt;Item 1&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item&#34;</span>&gt;Item 2&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;item&#34;</span>&gt;Item 3&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></div><h2 id="next-steps">Next Steps</h2>
+<p>With the CSS fundamentals under your belt, try styling the HTML page you created in the previous tutorial. Experiment with different selectors, properties, and values to see how they affect the appearance of your page.</p>
+<p>In the next tutorial, we&rsquo;ll explore JavaScript, which adds interactivity to your web pages.</p>
+
+            
+                
+                <div class="tutorial-navigation">
+                    
+                    
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+                        
+                    
+
+                    <div class="tutorial-nav-links">
+                        
+                        
+                        <a href="/tutorials/javascript-intro/" class="prev-tutorial">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous: JavaScript Introduction: Adding Interactivity</span>
+                        </a>
+                        
+
+                        
+                        
+                        <a href="/tutorials/html-basics/" class="next-tutorial">
+                            <span>Next: HTML Basics: Structure of the Web</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+            </article>
+        </div>
+    </main><footer class="container">
+    <p>© 2025 Ali Mashally Powered by Hugo</p>
+ </footer><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            setTimeout(function() {
+                document.querySelector('.fade-in').classList.add('active');
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSS on قالب شيكا</title>
+    <link>/ar/tags/css/</link>
+    <description>Recent content in CSS on قالب شيكا</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/ar/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>مقدمة في تطوير الويب</title>
+      <link>/ar/posts/sample-post/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/ar/posts/sample-post/</guid>
+      <description>مرحباً بك في عالم تطوير الويب! تطوير الويب هو فن وعلم إنشاء مواقع وتطبيقات الويب. يتضمن هذا المجال مجموعة متنوعة من المهارات والتقنيات، بدءًا من تصميم واجهات المستخدم الجذابة إلى برمجة الخوادم المعقدة.
+لماذا تعلم تطوير الويب؟ هناك الكثير من الأسباب التي تجعل تعلم تطوير الويب قراراً ممتازاً:
+الطلب المرتفع: المطورون مطلوبون بشدة في سوق العمل. مرونة العمل: يمكنك العمل من أي مكان في العالم. الإبداع: يمنحك الفرصة للتعبير عن إبداعك وإنشاء منتجات مفيدة.</description>
+    </item>
+    
+  </channel>
+</rss>

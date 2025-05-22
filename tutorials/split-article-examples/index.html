@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <link rel="stylesheet" href="/css/tutorial-series.css">
+    <title>Split Article Shortcode: Practical Examples</title>
+</head>
+<body>
+    <header>
+        <a href="/tutorials" class="back-link">
+            <i class="fa-solid fa-arrow-right"></i>
+            <span>Back to tutorials</span>
+        </a>
+        <div class="container">
+            <span class="tutorial-badge">Tutorial</span>
+            <h1 class="bg-heading">Split Article Shortcode: Practical Examples</h1>
+            <div class="article-meta">
+                
+                <p class="article-date">April 7, 2024</p>
+                
+                
+                <div class="article-tags">
+                    
+                    <a href="/tags/examples" class="tag-link">examples</a>
+                    
+                    <a href="/tags/tutorial" class="tag-link">tutorial</a>
+                    
+                    <a href="/tags/shortcodes" class="tag-link">shortcodes</a>
+                    
+                    <a href="/tags/advanced" class="tag-link">advanced</a>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="tutorial-banner">
+                <img src="/img/split-examples.jpg" alt="Split Article Shortcode: Practical Examples">
+            </div>
+            
+        </div>
+        <hr class="line">
+    </header>
+    <main>
+        <div class="main-container">
+            <article class="full-article fade-in">
+                <h1 id="split-article-shortcode-practical-examples">Split Article Shortcode: Practical Examples</h1>
+<p>This page demonstrates several practical examples of the split article shortcode in action. You can use these examples as inspiration for your own content.</p>
+<h2 id="example-1-code-comparison">Example 1: Code Comparison</h2>
+<p>The split-article shortcode can be used to compare different code implementations:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### HTML Version\n```html\n&lt;div class=\&#34;container\&#34;&gt;\n  &lt;div class=\&#34;row\&#34;&gt;\n    &lt;div class=\&#34;col\&#34;&gt;\n      &lt;p&gt;Content&lt;/p&gt;\n    &lt;/div&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n```&#34; 
+    right=&#34;### JSX Version\n```jsx\nfunction Container() {\n  return (\n    &lt;div className=\&#34;container\&#34;&gt;\n      &lt;div className=\&#34;row\&#34;&gt;\n        &lt;div className=\&#34;col\&#34;&gt;\n          &lt;p&gt;Content&lt;/p&gt;\n        &lt;/div&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  );\n}\n```&#34;
+    leftPoint=&#34;Traditional HTML&#34; 
+    rightPoint=&#34;React JSX&#34;
+    note=&#34;Different syntaxes for describing the same UI component structure.&#34;
+&gt;}}
+</code></pre><h2 id="example-2-before-and-after">Example 2: Before and After</h2>
+<p>Perfect for showing transformations or changes:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### Before Optimization\n```css\n.container {\n  background-color: #f5f5f5;\n  font-family: Arial, Helvetica, sans-serif;\n  color: #333333;\n  padding: 20px;\n  margin-bottom: 20px;\n  border-radius: 5px;\n}\n```&#34; 
+    right=&#34;### After Optimization\n```css\n:root {\n  --bg-color: #f5f5f5;\n  --text-color: #333;\n  --spacing: 20px;\n}\n\n.container {\n  background-color: var(--bg-color);\n  font-family: Arial, sans-serif;\n  color: var(--text-color);\n  padding: var(--spacing);\n  margin-bottom: var(--spacing);\n  border-radius: 5px;\n}\n```&#34;
+    leftPoint=&#34;Original CSS&#34; 
+    rightPoint=&#34;Optimized CSS&#34;
+    note=&#34;Using CSS variables improves maintainability and reduces repetition.&#34;
+&gt;}}
+</code></pre><h2 id="example-3-pros-and-cons">Example 3: Pros and Cons</h2>
+<p>Great for comparing advantages and disadvantages:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### Advantages\n- Faster page loads\n- Better SEO performance\n- Lower hosting costs\n- Improved security\n- No database maintenance&#34; 
+    right=&#34;### Disadvantages\n- Limited dynamic features\n- Build process required\n- Content editing less intuitive\n- No real-time updates\n- More complex setup&#34;
+    leftPoint=&#34;Static Site Pros&#34; 
+    rightPoint=&#34;Static Site Cons&#34;
+    note=&#34;When choosing a static site generator, weigh these factors based on your project needs.&#34;
+&gt;}}
+</code></pre><h2 id="example-4-comparison-with-vertical-layout">Example 4: Comparison with Vertical Layout</h2>
+<p>For sequential or chronological content:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### Phase 1: Research\nAt this stage, we gather requirements, analyze the market, and identify key user needs.&#34; 
+    right=&#34;### Phase 2: Design\nCreate wireframes, mockups, and prototypes based on the research findings.&#34;
+    leftPoint=&#34;Initial Phase&#34; 
+    rightPoint=&#34;Second Phase&#34;
+    note=&#34;A thorough research phase leads to more effective design solutions.&#34;
+    direction=&#34;vertical&#34;
+&gt;}}
+</code></pre><h2 id="example-5-translation-example">Example 5: Translation Example</h2>
+<p>Useful for multilingual content presentation:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### English\nWelcome to our website. We&#39;re glad you&#39;re here! Please explore our services and contact us if you have any questions.&#34; 
+    right=&#34;### Español\n¡Bienvenido a nuestro sitio web. ¡Nos alegra que estés aquí! Explore nuestros servicios y contáctenos si tiene alguna pregunta.&#34;
+    leftPoint=&#34;English&#34; 
+    rightPoint=&#34;Spanish&#34;
+    note=&#34;Providing multilingual content improves accessibility and expands your audience.&#34;
+&gt;}}
+</code></pre><h2 id="example-6-different-implementations">Example 6: Different Implementations</h2>
+<p>Compare alternative approaches:</p>
+<pre tabindex="0"><code>{{&lt; split-article 
+    left=&#34;### Function-Based\n```javascript\nfunction calculateTotal(items) {\n  return items.reduce((sum, item) =&gt; sum + item.price, 0);\n}\n```&#34; 
+    right=&#34;### Class-Based\n```javascript\nclass Cart {\n  constructor(items) {\n    this.items = items;\n  }\n  \n  calculateTotal() {\n    return this.items.reduce((sum, item) =&gt; sum + item.price, 0);\n  }\n}\n```&#34;
+    leftPoint=&#34;Functional approach&#34; 
+    rightPoint=&#34;Object-oriented approach&#34;
+    note=&#34;Both approaches are valid but suit different programming paradigms.&#34;
+&gt;}}
+</code></pre><h2 id="using-the-examples">Using the Examples</h2>
+<p>To use these examples in your own content:</p>
+<ol>
+<li>Copy the shortcode section you want to use</li>
+<li>Remove the triple backticks and shortcode escaping markers (<code>{{&lt;</code> and <code>&gt;}}</code>)</li>
+<li>Paste it into your Markdown file</li>
+<li>Customize the content to match your needs</li>
+</ol>
+<p>Remember that when including code blocks within the shortcode parameters, you need to escape any special characters (especially quotes) and use <code>\n</code> for line breaks.</p>
+
+            
+                
+                <div class="tutorial-navigation">
+                    
+                    
+                    
+                        
+                    
+                        
+                    
+                        
+                            
+                        
+                    
+
+                    <div class="tutorial-nav-links">
+                        
+                        
+                        <a href="/tutorials/theme-documentation/" class="prev-tutorial">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            <span>Previous: Shika Theme Documentation: Split Article Shortcode</span>
+                        </a>
+                        
+
+                        
+                    </div>
+                </div>
+                
+            </article>
+        </div>
+    </main><footer class="container">
+    <p>© 2025 Ali Mashally Powered by Hugo</p>
+ </footer><script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            setTimeout(function() {
+                document.querySelector('.fade-in').classList.add('active');
+            }, 100);
+        });
+    </script>
+</body>
+</html> 

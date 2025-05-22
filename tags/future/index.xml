@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>future on My New Hugo Site</title>
+    <link>/tags/future/</link>
+    <description>Recent content in future on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Dec 2023 11:43:54 -0500</lastBuildDate><atom:link href="/tags/future/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Evolution of Technology Shaping the Future</title>
+      <link>/posts/bye/</link>
+      <pubDate>Fri, 29 Dec 2023 11:43:54 -0500</pubDate>
+      
+      <guid>/posts/bye/</guid>
+      <description>The Evolution of Technology: Shaping the Future Technology has become an integral part of our daily lives, revolutionizing the way we live, work, and interact with the world. From the invention of the wheel to the rise of artificial intelligence, technology has continuously evolved, driving progress and innovation. In this article, we will explore the history, current trends, and future possibilities of technology, and how it is shaping the future of humanity.</description>
+    </item>
+    
+  </channel>
+</rss>
