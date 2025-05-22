@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OOP on قالب شيكا</title>
+    <link>/tags/oop/</link>
+    <description>Recent content in OOP on قالب شيكا</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>إزاي تفكر بالـــــــــــــــــــــــــ Object Oriented؟ (مقدمة)</title>
+      <link>/tutorials/oo/oo-chapter-1/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorials/oo/oo-chapter-1/</guid>
+      <description>مقدمة السلام عليكم ورحمة الله وبركاته، في الـ tutorial دي هنتكلم عن شئ مهم جداً في الـ Computer Science وهو ازاي تفكر بطريقة الـ OO.. ايه طريقة الـ OO دي ياعم؟ دي الـ Object Oriented .. وهدي أمثلة في برده في الـ Programming.. بس أهم حاجه عندي في الـ tutorial دي هو انك تتعلم ازاي تفكر Object Oriented. وطبعا الجزء ده هيكون مقدمة بسيطة عشان نفتح الأمور لـ بعد كده.</description>
+    </item>
+    
+  </channel>
+</rss>

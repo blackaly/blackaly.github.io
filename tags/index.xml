@@ -1,81 +1,72 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Shika Theme</title>
+    <title>Tags on قالب شيكا</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Shika Theme</description>
+    <description>Recent content in Tags on قالب شيكا</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 07 Apr 2024 13:00:00 -0500</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>advanced</title>
-      <link>/tags/advanced/</link>
-      <pubDate>Sun, 07 Apr 2024 13:00:00 -0500</pubDate>
+      <title>OO</title>
+      <link>/tags/oo/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>/tags/advanced/</guid>
+      <guid>/tags/oo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>examples</title>
-      <link>/tags/examples/</link>
-      <pubDate>Sun, 07 Apr 2024 13:00:00 -0500</pubDate>
+      <title>OOD</title>
+      <link>/tags/ood/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>/tags/examples/</guid>
+      <guid>/tags/ood/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcodes</title>
-      <link>/tags/shortcodes/</link>
-      <pubDate>Sun, 07 Apr 2024 13:00:00 -0500</pubDate>
+      <title>OOP</title>
+      <link>/tags/oop/</link>
+      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
       
-      <guid>/tags/shortcodes/</guid>
+      <guid>/tags/oop/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>tutorial</title>
-      <link>/tags/tutorial/</link>
-      <pubDate>Sun, 07 Apr 2024 13:00:00 -0500</pubDate>
+      <title>Operating Systems</title>
+      <link>/tags/operating-systems/</link>
+      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>/tags/tutorial/</guid>
+      <guid>/tags/operating-systems/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>documentation</title>
-      <link>/tags/documentation/</link>
-      <pubDate>Sun, 07 Apr 2024 12:00:00 -0500</pubDate>
+      <title>CSS</title>
+      <link>/tags/css/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/documentation/</guid>
+      <guid>/tags/css/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>theme</title>
-      <link>/tags/theme/</link>
-      <pubDate>Sun, 07 Apr 2024 12:00:00 -0500</pubDate>
+      <title>HTML</title>
+      <link>/tags/html/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/theme/</guid>
+      <guid>/tags/html/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>guide</title>
-      <link>/tags/guide/</link>
-      <pubDate>Sun, 07 Apr 2024 11:00:00 -0500</pubDate>
+      <title>تطوير الويب</title>
+      <link>/tags/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</link>
+      <pubDate>Sat, 15 Apr 2023 00:00:00 +0000</pubDate>
       
-      <guid>/tags/guide/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>/tags/hugo/</link>
-      <pubDate>Sun, 07 Apr 2024 11:00:00 -0500</pubDate>
-      
-      <guid>/tags/hugo/</guid>
+      <guid>/tags/%D8%AA%D8%B7%D9%88%D9%8A%D8%B1-%D8%A7%D9%84%D9%88%D9%8A%D8%A8/</guid>
       <description></description>
     </item>
     
