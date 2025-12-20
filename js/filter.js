@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const filterBtns = document.querySelectorAll('.filter-btn');
     const postItems = document.querySelectorAll('.post-item[data-lang]');
+    const thoughtItems = document.querySelectorAll('.thought-item[data-lang]');
     
+
+
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const lang = this.dataset.lang;

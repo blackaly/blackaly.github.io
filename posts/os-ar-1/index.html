@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظم التشغيل: 1 | mashally</title>
+    <meta name="description" content="personal blog">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <header class="site-header">
+    <div class="container">
+        <h1 class="site-title">
+            <a href="https://blackaly.github.io/">mashally</a>
+        </h1>
+        
+        <nav class="site-nav">
+            <a href="/posts/" class="nav-link">all posts</a><span class="nav-separator">·</span><a href="/thoughts/" class="nav-link">thoughts</a><span class="nav-separator">·</span><a href="/books/" class="nav-link">books</a><span class="nav-separator">·</span><a href="/anthology/" class="nav-link">anthology</a><span class="nav-separator">·</span><a href="https://www.admonymous.co/ali-muhammad" class="nav-link">leave a message</a>
+        </nav>
+    </div>
+</header>
+
+    
+    <main class="main-content">
+        <div class="content-wrapper">
+            
+<article class="container single-post" lang="ar" dir="rtl">
+    <header class="post-header">
+        <h1 class="post-title" lang="ar">نظم التشغيل: 1</h1>
+        <time class="post-date" datetime="2025-12-20">Saturday, 20 December 2025</time>
+    </header>
+    
+    <div class="post-content prose" lang="ar">
+        <h1 id="مقدمة-عامة-تاريخ">مقدمة عامة (تاريخ)</h1>
+<p>في الشابتر ده، هنتعرف مع بعض على المفاهيم الأساسية اللي لازم تبقى فاهمها قبل ما تخش بجد في عالم الـ Operating Systems. انا هحاول في الـ tutorial دي اني مستخدمش لغة سهلة عشان ميكونش في misconception أو أوصلك المعلومة لـ دماغك وتفكر بيها بعد كده بشكل غلط. وبرده هحاول اني مستخدمش لغة صعبة غير مفهومة هتخلي الأمور بالنسبه ليك أعقد أكتر، وده مش هدفي طبعاً.</p>
+<h2 id="هنتعلم-ايه-في-الفصل-ده">هنتعلم ايه في الفصل ده؟</h2>
+<ul>
+<li>هنعرف ايه هو الـ Operating system ده</li>
+<li>هنتكلم عن المهام الرئيسية للـ Operating Systems</li>
+<li>هنتكلم برده على ازاي الجهاز بيبدأ يشتغل أول ما بنفتحه</li>
+<li>هنتعلم يعني ايه Process</li>
+<li>هنفهم يعني ايه Interrupt</li>
+<li>هنفهم ايه الفرق ما بين الـUser Mode والـ Kernel Mode وليه هما مهمين لأي نظام تشغيل</li>
+<li>وهنتكلم عن الـ System calls</li>
+</ul>
+<p>الحاجات دي لو فهمتها كويس، كل اللي جاي هيكون سهل عليك، ان شاء الله، والمقدمة دي هتكون متقسمه لأجزاء.</p>
+<h2 id="يعني-ايه-operating-system">يعني ايه Operating System؟</h2>
+<p>خلينا قبل ما نبدأ تعريف الـ Operating systems نروح الأول هي الناس كانت بتعمل ايه قبل ما يكون في مفهوم الـ Operating System. قبل الـ Operating system كانت كل حاجه حرفياً Manual مكنش في حاجه موجودة اسمها C او C++ ومكنش في كمان حاجه اسمها assembly. كان ساعتها الكمبيوتر مش بيفهم غير الـ Machine Language اللي هي 0 و 1، وانت اللي كنت بتكتب الكود ده بنفسك.</p>
+<h4 id="طب-إزاي-كان-بيتعامل-مع-الهاردوير-وازاي-كان-بيتعامل-مع-الميموري"><strong>طب إزاي كان بيتعامل مع الهاردوير وازاي كان بيتعامل مع الميموري؟</strong></h4>
+<p>في البداية مفهوم الـ Variable مكنش موجود.. الكمبيوتر كان بيشوف فقط الـ Memory على انها Array of Addresses وكل addresses حجمه بيكون واحد byte.</p>
+<p>فـ عشان تحط الداتا بتاعتك في الميموري فكنت بتحدد بنفسك الـ address وتحط فيه الداتا بتاعتك، وبرده كنت بتكتب كود (Machine code) عشان تنقل الداتا دي من الـ Memory للـ CPU عشان يعملها Processing.</p>
+<p>مثال على الكلام ده مثلاً، نفترض اننا عاوزين نجمع رقمين، تمام؟ والرقم الأول محطوط في Memory address مثلاً (005)، والرقم التاني محطوط في Memory address مثلاً (006) والناتج اللي هيطلع عاوزين نحطه في الـ Memory address وليكن (007). وخلي بالك الداتا في الميموري عبارة عن Bytes.</p>
+<p>طيب الرقم الاول ده لازم اجيبه من الميموري عشان احطه في وحدة تخزين في الـ CPU بنسميها الـ registers. الـ registers  بيستخدمها الـ CPU عشان يخزن الداتا اللي بيشتغل عليها في الوقت الحالي (هنتناقش فيها بالتفاصيل مستقبلاً). طيب، انا هنا محتاج أكتب <strong>Instruction</strong> أو <strong>أمر</strong> بالـ (0 والـ 1) يقول للـ cpu ازاي يقدر يجيب الداتا اللي في الميموري دي ويخزنها في register معين عنده وليكن اسمه r1، فأنا هنا بعمل <strong>load</strong> من الميموري للـ register اللي اسمه r1. فيبدأ الـ cpu يفهم الـ instruction اللي انت مديهاله واخترعتها عشان بس تـ <strong>load</strong> الرقم من الميموري للـ register. نفس الخطوات دي هعملها برده مع الرقم التاني بس طبعا هتغير الـ memory address اللي فيه الرقم، وطبعا هتخزنه في register تاني وليكن برده اسمه r2.. تمام.</p>
+<p>دلوقتي بقى انا عاوز ابدأ أجمع الرقمين.. أحنا عندنا حاجه اسمها ALU (<strong>Arithmetic Logic Unit</strong>) ودي جزء من اجزء الـ CPU وظيفتها انها بتعمل عمليات حسابية (Arithmetic operations) وبيعمل عمليات منطقية (Logic Operations) زي هل الرقم ده أقل من ده او بيساويه أو الـ AND والـ OR وهكذا يعني.  طيب فهمنا الـ ALU بشكل بسيط، دلوقتي الـ ALU اللي هما عملينها دي انا عاوز استخدمها عشان غرض وهو اني أجمع رقمين.. طبعاً الـ ALU فيها الـمكونات اللي تقدر تعمل الـ operation دي (انها تجمع رقمين) لكن هل هي عارفه ازاي؟
+بمعنى برده، الـ Instruction اللي انت هتديها للـ CPU ازاي هيعرف انها دي عملية جمع؟ ودي جزء تاني من الـ CPU اسمه الـ Control Unit.. الجزء ده من الـ CPU هو متصمم انه يوجه الـ instruction بتاعتك اللي انت عملتها بتاعت الجمع دي للـ ALU. طيب، انا عملت الـ instruction وخلاص جمعت الرقمين.. وطلعلي ناتج - مش لازم ازاي طلع، لكنه طلع وخلاص - عاوز اتصرف فيه، طبعاً يعني هخزنه في register تالت هسميه r3. الناتج ده مش هيفضل طول عمره في الـ register كده.. فيه process تانيه مستنيه انها تتجمع، فـ لازم آخد الناتج ده من الـ register واحطه في الميموري، ودي instruction رابعه برده (يوووووه) عشان <strong>نخزن</strong> الناتج ده من الـ register للـ memory لعل وعسى نحتاجها برده في process تانيه!</p>
+<p>فـ شوفت انت محتاج كل ده (وبالـ 0 والـ 1) عشان بس تجمع رقمين! محتاج:
+<code>LOAD</code> r1, 005
+<code>LOAD</code> r2, 006
+<code>ADD</code> r1, r2, r3
+<code>STORE</code> 007, r3</p>
+<pre tabindex="0"><code>Did it ever occur to you to ask, for example, that in the LOAD instruction we could use only two registers instead of three, add the two values, and store the result in either r1 or r2?
+</code></pre><p>كل الـ zeros والـ ones دي انت اللي كنت بتكتبها بإيدك، وبرده كان في طرق كتير عشان تـ represent الـ zero والـ one اللي بتكون بيها الـ instruction زي الـ
+<a href="https://en.wikipedia.org/wiki/Punched_tape">Punched tape</a> واللي كانوا بيخزنوا فيها الـ instructions دي، فتخيل بقى لو بتعمل حاجه زي Amazon! او حتى بتـكتب Data structure.. او انك تخلي الجهاز بتاعك يقدر يتواصل مع الشاشة اللي انت بتقرأ منها المقال حاليا كان ممكن ياخد وقت قد ايه وكمية التعقيد اللي فيه. عشان كده فكروا في الـ Assembly Language اللي خلت كتابة الكود شكل سهل وبيفهمه الإنسان بشكل أحسن. فخلوا بدل ما اكتب instruction بالزيرو والواحد عشان اجيب داتا من الميموري مثلا خلوها اسمها <code>LOAD</code> وهكذا.</p>
+
+    </div>
+    
+    
+    <footer class="post-footer">
+        <div class="post-tags">
+            
+            <a href="/tags/cs" class="tag">cs</a>
+            
+            <a href="/tags/os" class="tag">os</a>
+            
+        </div>
+    </footer>
+    
+    
+    <nav class="post-navigation">
+        
+        <a href="https://blackaly.github.io/posts/arabic-poetry-note/" class="nav-prev">← ملاحظات على الشعر</a>
+        
+        
+    </nav>
+</article>
+
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <p class="copyright">
+            &copy; 2025 mashally
+        </p>
+    </div>
+</footer>
+
+    <script src="/js/filter.js"></script>
+</body>
+</html>

@@ -2,32 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://blackaly.github.io/posts/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://blackaly.github.io/anthology/</loc>
-    <lastmod>2025-12-03T22:24:00+00:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/books/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/tags/cs/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/</loc>
-    <lastmod>2025-12-03T22:24:00+00:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/anthology/ibn-muqaffa-32/</loc>
-    <lastmod>2025-12-03T22:24:00+00:00</lastmod>
+    <loc>https://blackaly.github.io/books/les_fleurs_du_mal/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/thoughts/third-thought/</loc>
-    <lastmod>2024-06-14T00:00:00+00:00</lastmod>
+    <loc>https://blackaly.github.io/tags/os/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/tags/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/anthology/gibran_the_broken_wings/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/thoughts/leaving/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/thoughts/</loc>
-    <lastmod>2024-06-14T00:00:00+00:00</lastmod>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://blackaly.github.io/posts/os-ar-1/</loc>
+    <lastmod>2025-12-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/cinema/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/thoughts/second-thought/</loc>
-    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blackaly.github.io/cinema/anime-1/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/thoughts/first-thought/</loc>
-    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/cinema/series-1/</loc>
     <lastmod>2024-06-12T00:00:00+00:00</lastmod>
@@ -35,56 +50,17 @@
     <loc>https://blackaly.github.io/cinema/film-1/</loc>
     <lastmod>2024-06-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/books/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/books/the-f/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/books/the-jargon-file/</loc>
-    <lastmod>2024-06-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/posts/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/tags/books/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/posts/on-the-nature-of-reading/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/tags/philosophy/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/tags/</loc>
-    <lastmod>2024-01-15T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://blackaly.github.io/articles/</loc>
     <lastmod>2024-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/tags/culture/</loc>
     <lastmod>2024-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/articles/tradition-and-modernity/</loc>
+    <loc>https://blackaly.github.io/tags/philosophy/</loc>
     <lastmod>2024-01-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://blackaly.github.io/tags/design/</loc>
-    <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/posts/simplicity-in-design/</loc>
-    <lastmod>2024-01-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/tags/journal/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/posts/morning-reflections/</loc>
-    <lastmod>2024-01-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/posts/note-on-correspondence/</loc>
-    <lastmod>2023-12-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/tags/letters/</loc>
-    <lastmod>2023-12-28T00:00:00+00:00</lastmod>
+    <loc>https://blackaly.github.io/articles/tradition-and-modernity/</loc>
+    <lastmod>2024-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://blackaly.github.io/tags/poetry/</loc>
     <lastmod>2023-12-20T00:00:00+00:00</lastmod>
@@ -100,8 +76,6 @@
   </url><url>
     <loc>https://blackaly.github.io/articles/defence-of-boredom/</loc>
     <lastmod>2023-11-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://blackaly.github.io/thoughts/heelo/</loc>
   </url><url>
     <loc>https://blackaly.github.io/categories/</loc>
   </url><url>

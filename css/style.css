@@ -8,6 +8,7 @@
     
     --font-serif: Georgia, "Times New Roman", serif;
     --font-arabic: "Amiri", Georgia, serif;
+    --font-mono: "Cascadia Mono", "Cascadia Code", Consolas, "Courier New", monospace;
     
     --spacing-sm: 0.5rem;
     --spacing-md: 1rem;
@@ -266,13 +267,29 @@ a:hover {
 
 .post-content code {
     font-size: 0.85em;
+    font-family: var(--font-mono);
+    background-color: transparent;
+    color: whitesmoke;
 }
 
 .post-content pre {
     padding: var(--spacing-md);
-    overflow-x: auto;
+    overflow-x: auto ;
     margin: var(--spacing-md) 0;
-    background-color: rgba(0,0,0,0.03);
+    background-color: #393c49 !important;
+    direction: ltr;
+    text-align: left;
+    font-family: var(--font-mono);
+    overflow: scroll !important;
+    height: 50% !important;
+    border-radius: 8px;
+    max-height: 70vh;
+}
+
+.post-content pre code,
+.post-content code {
+    direction: ltr;
+    text-align: left;
 }
 
 .post-footer {
@@ -470,7 +487,7 @@ a:hover {
     color: var(--color-text);
 }
 
-.post-item.hidden {
+.hidden {
     display: none;
 }
 
@@ -606,13 +623,15 @@ a:hover {
     flex-direction: column;
     gap: 0;
     margin-top: var(--spacing-sm);
-    border-top: 1px solid var(--color-border);
 }
 
 .thought-item {
     padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--color-border);
     position: relative;
+}
+
+.thought-item + .thought-item {
+    border-top: 1px solid var(--color-border);
 }
 
 .thought-meta {
@@ -638,6 +657,8 @@ a:hover {
     text-align: justify;
     padding-left: 1.2rem;
     position: relative;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .thought-body::before {
@@ -734,20 +755,22 @@ a:hover {
     flex-direction: column;
     gap: 0;
     margin-top: var(--spacing-sm);
-    border-top: 1px solid var(--color-border);
 }
 
 .cinema-item {
-    display: grid;
-    grid-template-columns: 110px 1fr;
+    display: flex;
     gap: var(--spacing-lg);
-    align-items: start;
+    align-items: flex-start;
     padding: var(--spacing-md) 0;
-    border-bottom: 1px solid var(--color-border);
+}
+
+.cinema-item + .cinema-item {
+    border-top: 1px solid var(--color-border);
 }
 
 .cinema-cover {
     display: block;
+    flex: 0 0 110px;
     width: 110px;
 }
 
@@ -759,6 +782,7 @@ a:hover {
 }
 
 .cinema-details {
+    flex: 1 1 220px;
     min-width: 0;
 }
 
@@ -795,11 +819,11 @@ a:hover {
 
 @media (max-width: 640px) {
     .cinema-item {
-        grid-template-columns: 1fr;
+        flex-wrap: wrap;
     }
 
     .cinema-cover {
-        width: 140px;
+        width: 120px;
     }
 }
 

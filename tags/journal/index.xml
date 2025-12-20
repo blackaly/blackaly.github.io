@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Journal on mashally</title>
-    <link>https://blackaly.github.io/tags/journal/</link>
+    <link>http://localhost:1313/tags/journal/</link>
     <description>Recent content in Journal on mashally</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 05 Jan 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://blackaly.github.io/tags/journal/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/journal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Morning Reflections</title>
-      <link>https://blackaly.github.io/posts/morning-reflections/</link>
+      <link>http://localhost:1313/posts/morning-reflections/</link>
       <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://blackaly.github.io/posts/morning-reflections/</guid>
+      <guid>http://localhost:1313/posts/morning-reflections/</guid>
       <description>&lt;p&gt;The early hours belong to thought. Before the day&amp;rsquo;s demands crowd in, there is space for reflection. The mind, rested and clear, moves freely among ideas.&lt;/p&gt;&#xA;&lt;p&gt;I have made it my habit to rise before dawn. In the quiet darkness, with only a lamp for company, I read and I write. These hours are my own.&lt;/p&gt;&#xA;&lt;h2 id=&#34;on-routine&#34;&gt;On Routine&lt;/h2&gt;&#xA;&lt;p&gt;Routine is not the enemy of creativity. It is its foundation. The writer who waits for inspiration will write little. The one who sits down each morning, regardless of mood, will produce a body of work.&lt;/p&gt;</description>
     </item>
   </channel>
