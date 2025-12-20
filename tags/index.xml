@@ -1,47 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on قالب شيكا</title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on قالب شيكا</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Tags on mashally</title>
+    <link>https://blackaly.github.io/tags/</link>
+    <description>Recent content in Tags on mashally</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blackaly.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>OO</title>
-      <link>/tags/oo/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/oo/</guid>
+      <title>Books</title>
+      <link>https://blackaly.github.io/tags/books/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/books/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>OOD</title>
-      <link>/tags/ood/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ood/</guid>
+      <title>Philosophy</title>
+      <link>https://blackaly.github.io/tags/philosophy/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/philosophy/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>OOP</title>
-      <link>/tags/oop/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/oop/</guid>
+      <title>Culture</title>
+      <link>https://blackaly.github.io/tags/culture/</link>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/culture/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>Operating Systems</title>
-      <link>/tags/operating-systems/</link>
-      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/operating-systems/</guid>
+      <title>Design</title>
+      <link>https://blackaly.github.io/tags/design/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/design/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title>Journal</title>
+      <link>https://blackaly.github.io/tags/journal/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/journal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Letters</title>
+      <link>https://blackaly.github.io/tags/letters/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/letters/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Poetry</title>
+      <link>https://blackaly.github.io/tags/poetry/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/poetry/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Writing</title>
+      <link>https://blackaly.github.io/tags/writing/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/tags/writing/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

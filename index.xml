@@ -1,30 +1,145 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>قالب شيكا</title>
-    <link>/</link>
-    <description>Recent content on قالب شيكا</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>Home on mashally</title>
+    <link>https://blackaly.github.io/</link>
+    <description>Recent content in Home on mashally</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Dec 2025 16:31:00 +0000</lastBuildDate>
+    <atom:link href="https://blackaly.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>إزاي تفكر بالـــــــــــــــــــــــــ Object Oriented؟ (مقدمة)</title>
-      <link>/tutorials/oo/oo-chapter-1/</link>
-      <pubDate>Thu, 22 May 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorials/oo/oo-chapter-1/</guid>
-      <description>مقدمة السلام عليكم ورحمة الله وبركاته، في الـ tutorial دي هنتكلم عن شئ مهم جداً وهو ازاي تفكر بطريقة الـ OO.. ايه طريقة الـ OO دي ياعم؟ دي الـ Object Oriented وهنشرح كل شئ متعلق بيها بالتفاصيل خلال الـ tutorial دي .. وهعطي أمثلة لبرامج بسيطة عشان الأمور توضح.. بس أهم حاجه عندي في الـ tutorial دي هو انك تتعلم ازاي تفكر بالـ Object Oriented. وطبعا الجزء ده (اللي بنشرحه حالياً) هيكون مقدمة بسيطة عشان نفتح الأمور لـ بعد كده.</description>
+      <title>Ibn Al-Muqaffa&#39; 131</title>
+      <link>https://blackaly.github.io/anthology/ibn-muqaffa-131/</link>
+      <pubDate>Fri, 12 Dec 2025 16:31:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/ibn-muqaffa-131/</guid>
+      <description>&lt;p&gt;وليس يفرح العاقل بإلحال النكير، ولا يحزنه ذلك، ولكن ماله عقله وما قدمُ من صالح عمله.&lt;/p&gt;</description>
     </item>
-    
     <item>
-      <title>مقدمة عامة عن الـ Operating Systems (الفصل الأول)</title>
-      <link>/tutorials/os/os-chapter-1/</link>
-      <pubDate>Tue, 08 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorials/os/os-chapter-1/</guid>
-      <description>مقدمة عامة (تاريخ) في الشابتر ده، هنتعرف مع بعض على المفاهيم الأساسية اللي لازم تبقى فاهمها قبل ما تخش بجد في عالم الـ Operating Systems. انا هحاول في الـ tutorial دي اني مستخدمش لغة سهلة عشان ميكونش في misconception أو أوصلك المعلومة لـ دماغك وتفكر بيها بعد كده بشكل غلط. وبرده هحاول اني مستخدمش لغة صعبة غير مفهومة هتخلي الأمور بالنسبه ليك أعقد أكتر، وده مش هدفي طبعاً.
-هنتعلم ايه في الفصل ده؟ هنعرف ايه هو الـ Operating system ده هنتكلم عن المهام الرئيسية للـ Operating Systems هنتكلم برده على ازاي الجهاز بيبدأ يشتغل أول ما بنفتحه هنتعلم يعني ايه Process هنفهم يعني ايه Interrupt هنفهم ايه الفرق ما بين الـUser Mode والـ Kernel Mode وليه هما مهمين لأي نظام تشغيل وهنتكلم عن الـ System calls الحاجات دي لو فهمتها كويس، كل اللي جاي هيكون سهل عليك، ان شاء الله، والمقدمة دي هتكون متقسمه لأجزاء.</description>
+      <title>Ibn Al-Muqaffa&#39; 34</title>
+      <link>https://blackaly.github.io/anthology/ibn-muqaffa-34/</link>
+      <pubDate>Wed, 03 Dec 2025 22:35:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/ibn-muqaffa-34/</guid>
+      <description>&lt;p&gt;ولا تقل كا يقول السفهاء أجير ما يحمت، فإن الكذاب أكثر ما أنت سامع، وإن السفهاء أكثر من هو قائل، وإنك إن صرت للأحاديث راعيا وحاملا، كان ما بي وتحمل عن العامة أكثرها ما يخترع اخترعٌ بأضعاف.&lt;/p&gt;</description>
     </item>
-    
+    <item>
+      <title>Ibn Al-Muqaffa&#39; 32</title>
+      <link>https://blackaly.github.io/anthology/ibn-muqaffa-32/</link>
+      <pubDate>Wed, 03 Dec 2025 22:24:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/ibn-muqaffa-32/</guid>
+      <description>&lt;p&gt;إن استطعت أن تزل نفسك دون غايتك في كل عليس ومقام ومقال ورأي وفعل فافعل، فإن رفق الناس إياك فوق المنزلة التي تُحطَ إليا نفسك، وتقريبهم إياك في الجلس الذي تباعدت عنه، وتعظيمهم من أمرك ما لم تعظم، وترتيبهم من كلامك ورأيك ما لم ترتبن، هو الجمال.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ibn Al-Muqaffa&#39; 31</title>
+      <link>https://blackaly.github.io/anthology/ibn-muqaffa-31/</link>
+      <pubDate>Wed, 03 Dec 2025 22:13:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/ibn-muqaffa-31/</guid>
+      <description>&lt;p&gt;إيكَ ما تصرف به الأذى والعذاب عن نفسك ألا تكون حسودًا، فإن الحسد خلق لثيم، ومن توجه أنه يؤلي بالأذنى من الأقارب والأكفاء، فيكمن ما شُلطيل به الحسد أن تعلم أن خير ما تكون حين تكون مع من هو خير منك، وأن غشا ما تصرف به الأذى والعذاب عن نفسك ألا تكون حسوراً، وأفضل منك في الجاه فتصيب حاجاتك بجاهه، وأفضل منك في الدين فتزداد صلاحا بصلاحه. لكن ما تحقق فيه من أمر عدوك ومحاسدك أن تعلم أنه لا غشا أن تكون عشيرك وخليقك أفضل منك في القوة، فيذود عنك ببأسه، وأفضل منك في المال فينوبه، وأفضل منك في الجاه فتصيب حاجاتك بجاهه.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ibn Al-Muqaffa&#39; 30</title>
+      <link>https://blackaly.github.io/anthology/ibn-muqaffa-30/</link>
+      <pubDate>Wed, 03 Dec 2025 20:59:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/ibn-muqaffa-30/</guid>
+      <description>&lt;p&gt;اعلم أن إخوان الصدق هم خير مكاسب الدنيا، زينةٌ في الرخاء، وعدةٌ في الشدة، ومعونةٌ على المعاش والمعاد، فلا تفرطن في اكتسابهم وابتغاء الوصلات والأسباب إليهم. اعلم أنك واحدُ ورغبتك من الإخاء عند أقوام قد حالت بينك وبينهم بعض الأهوية التي قد تعتري أهل المروات فتحجز منهم كثيرًا ممن يرغب في أمثالهم، فإذا رأيت أحدًا من أولئك قد عزَّ به الزمان فأقته.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Al-Bahai 234</title>
+      <link>https://blackaly.github.io/anthology/al-bahai-234/</link>
+      <pubDate>Tue, 02 Dec 2025 17:21:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/al-bahai-234/</guid>
+      <description>&lt;p&gt;قال القيرواني من المنطرح: المنطوع حرب بجاد، وخيل غيال، وفرسان ورجال، فرية الأجيال، سريعة عودة الحال، تسوق الفكرة، وتسلب الأث استلاب السكرة، وولك اللسان وما أراد، أساء أو أجاد، إلا أيًّا مدني على المعلول من أشراف الملوك.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tolstoy 72</title>
+      <link>https://blackaly.github.io/anthology/tolstoy-72/</link>
+      <pubDate>Sat, 15 Nov 2025 23:04:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/tolstoy-72/</guid>
+      <description>&lt;p&gt;In the matter of moral law we witness a strange phenomenon to which men pay too little attention. If I speak to an unlearned man about geology, astronomy, history, natural philosophy, or mathematics, he receives the information as quite new to him, and never says to me, &amp;ldquo;There is nothing new in what you tell me; every one knows it, and I have known it for a long time.&amp;rdquo; But tell a man one of the highest moral truths in the simplest manner, in such a way as it has never been before formulated, and every ordinary man, particularly one who does not take any interest in moral questions, and, above all, one who dislikes them, is sure to say, &amp;ldquo;Who does not know that? It has been always known and expressed.&amp;rdquo; And he really believes this. Only those who can appreciate moral truths know how to value their elucidation and simplification by a long and laborious process, or can prize the transition from a proposition or desire at first vaguely understood to a firm and determined expression calling for a corresponding change of conduct.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Seneca 45</title>
+      <link>https://blackaly.github.io/anthology/seneca-45/</link>
+      <pubDate>Mon, 10 Nov 2025 14:22:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/seneca-45/</guid>
+      <description>&lt;p&gt;It is not that we have a short space of time, but that we waste much of it. Life is long enough, and it has been given in sufficiently generous measure to allow the accomplishment of the very greatest things if the whole of it is well invested. But when it is squandered in luxury and carelessness, when it is devoted to no good end, forced at last by the ultimate necessity we perceive that it has passed away before we were aware that it was passing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Marcus Aurelius 12</title>
+      <link>https://blackaly.github.io/anthology/marcus-aurelius-12/</link>
+      <pubDate>Wed, 05 Nov 2025 09:15:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/anthology/marcus-aurelius-12/</guid>
+      <description>&lt;p&gt;When you wake up in the morning, tell yourself: The people I deal with today will be meddling, ungrateful, arrogant, dishonest, jealous, and surly. They are like this because they cannot tell good from evil. But I have seen the beauty of good, and the ugliness of evil, and have recognized that the wrongdoer has a nature related to my own—not of the same blood or birth, but the same mind, and possessing a share of the divine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Jargon File</title>
+      <link>https://blackaly.github.io/books/the-f/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/books/the-f/</guid>
+      <description>&lt;p&gt;Short notes about why this book stuck with me and where it fits in my reading.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Jargon File</title>
+      <link>https://blackaly.github.io/books/the-jargon-file/</link>
+      <pubDate>Mon, 10 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/books/the-jargon-file/</guid>
+      <description>&lt;p&gt;Short notes about why this book stuck with me and where it fits in my reading.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On the Nature of Reading</title>
+      <link>https://blackaly.github.io/posts/on-the-nature-of-reading/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/on-the-nature-of-reading/</guid>
+      <description>&lt;p&gt;Reading is not merely the act of decoding symbols on a page. It is a conversation across time, a meeting of minds separated by centuries yet united in thought.&lt;span class=&#34;sidenote-wrapper&#34;&gt;&lt;sup class=&#34;sidenote-ref&#34;&gt;1&lt;/sup&gt;&lt;span class=&#34;sidenote sidenote-right&#34;&gt;1. really?&lt;/span&gt;&lt;/span&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;When we read the ancients, we do not simply consume their words. We enter into dialogue with them. We question, we agree, we dispute. The text becomes a living thing, breathing new meaning with each encounter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-lost-art-of-slow-reading&#34;&gt;The Lost Art of Slow Reading&lt;/h2&gt;&#xA;&lt;p&gt;Our age has forgotten how to read slowly.&lt;span class=&#34;sidenote-wrapper&#34;&gt;&lt;sup class=&#34;sidenote-ref&#34;&gt;2&lt;/sup&gt;&lt;span class=&#34;sidenote sidenote-left&#34;&gt;2. Great&lt;/span&gt;&lt;/span&gt;&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tradition and Modernity: A False Dichotomy</title>
+      <link>https://blackaly.github.io/articles/tradition-and-modernity/</link>
+      <pubDate>Fri, 12 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/articles/tradition-and-modernity/</guid>
+      <description>&lt;p&gt;We are told that we must choose. Either we embrace the new and cast off the old, or we cling to tradition and reject progress. This is a false choice.&lt;/p&gt;&#xA;&lt;p&gt;The wisest cultures have always known how to hold both. They honor what has been proven by time while remaining open to genuine improvement. They distinguish between change for its own sake and change that serves human flourishing.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-weight-of-inheritance&#34;&gt;The Weight of Inheritance&lt;/h2&gt;&#xA;&lt;p&gt;To inherit a tradition is to receive a gift and a responsibility. Those who came before us labored to understand the world. They made mistakes, but they also discovered truths. To dismiss their work is arrogance.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simplicity in Design</title>
+      <link>https://blackaly.github.io/posts/simplicity-in-design/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/simplicity-in-design/</guid>
+      <description>&lt;p&gt;The pursuit of simplicity is not a retreat from complexity. It is the hard-won result of understanding what is essential and having the courage to remove everything else.&lt;/p&gt;&#xA;&lt;p&gt;A simple design does not happen by accident. It requires more thought, more refinement, more willingness to discard what does not serve the whole.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-tradition-of-less&#34;&gt;The Tradition of Less&lt;/h2&gt;&#xA;&lt;p&gt;The great craftsmen understood this. A Shaker chair. A Japanese tea bowl. A Roman arch. Each achieves its beauty not through addition but through restraint.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Morning Reflections</title>
+      <link>https://blackaly.github.io/posts/morning-reflections/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/morning-reflections/</guid>
+      <description>&lt;p&gt;The early hours belong to thought. Before the day&amp;rsquo;s demands crowd in, there is space for reflection. The mind, rested and clear, moves freely among ideas.&lt;/p&gt;&#xA;&lt;p&gt;I have made it my habit to rise before dawn. In the quiet darkness, with only a lamp for company, I read and I write. These hours are my own.&lt;/p&gt;&#xA;&lt;h2 id=&#34;on-routine&#34;&gt;On Routine&lt;/h2&gt;&#xA;&lt;p&gt;Routine is not the enemy of creativity. It is its foundation. The writer who waits for inspiration will write little. The one who sits down each morning, regardless of mood, will produce a body of work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Note on Correspondence</title>
+      <link>https://blackaly.github.io/posts/note-on-correspondence/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/note-on-correspondence/</guid>
+      <description>&lt;p&gt;The art of letter-writing has nearly vanished. Email has made communication instant but has robbed it of weight. We dash off messages without thought, knowing they cost us nothing.&lt;/p&gt;&#xA;&lt;p&gt;A letter, by contrast, demands effort. The choice of paper, the forming of words by hand, the journey through the post—all these invest the message with significance. The recipient knows that time and care went into its making.&lt;/p&gt;&#xA;&lt;p&gt;I maintain correspondences with a handful of friends. Our letters are slow, sometimes months apart. But each one is considered. Each one matters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ملاحظات على الشعر</title>
+      <link>https://blackaly.github.io/posts/arabic-poetry-note/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/arabic-poetry-note/</guid>
+      <description>&lt;p&gt;الشعر العربي تقليد عريق يمتد لأكثر من ألف وخمسمائة عام. في قصائده نجد الحكمة والجمال والحقيقة الإنسانية.&lt;/p&gt;&#xA;&lt;p&gt;القصيدة الجيدة لا تُقرأ مرة واحدة. تُقرأ وتُعاد قراءتها. في كل مرة نكتشف شيئاً جديداً.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>On Writing Clearly</title>
+      <link>https://blackaly.github.io/articles/on-writing-clearly/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/articles/on-writing-clearly/</guid>
+      <description>&lt;p&gt;Clear writing is clear thinking made visible. When our prose is confused, it is usually because our ideas are confused. The discipline of writing forces us to discover what we actually believe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-enemy-of-clarity&#34;&gt;The Enemy of Clarity&lt;/h2&gt;&#xA;&lt;p&gt;The chief enemy of clear writing is pretension. We reach for impressive words when simple ones would serve. We construct elaborate sentences to hide the thinness of our thought. We mistake obscurity for depth.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Defence of Boredom</title>
+      <link>https://blackaly.github.io/articles/defence-of-boredom/</link>
+      <pubDate>Mon, 20 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/articles/defence-of-boredom/</guid>
+      <description>&lt;p&gt;We have declared war on boredom. Every idle moment must be filled. We carry devices that promise infinite entertainment. We have forgotten how to wait, how to be still, how to be alone with our thoughts.&lt;/p&gt;&#xA;&lt;p&gt;This is a loss greater than we know.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-uses-of-emptiness&#34;&gt;The Uses of Emptiness&lt;/h2&gt;&#xA;&lt;p&gt;Boredom is not mere absence. It is a space in which something can happen. When the mind is not occupied, it wanders. It makes unexpected connections. It surfaces thoughts long submerged.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

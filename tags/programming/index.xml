@@ -1,21 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>programming on My New Hugo Site</title>
-    <link>/tags/programming/</link>
-    <description>Recent content in programming on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 02 Jan 2024 10:00:00 -0500</lastBuildDate><atom:link href="/tags/programming/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>What is a Distributed System</title>
-      <link>/posts/distributed-systems/</link>
-      <pubDate>Tue, 02 Jan 2024 10:00:00 -0500</pubDate>
-      
-      <guid>/posts/distributed-systems/</guid>
-      <description>What is a Distributed System This section was labeled under, or is related to [programming]
-I&amp;rsquo;ve been reading recently Distributed Systems by Steen, M. v., &amp;amp; Tanenbaum, A. S.[1]1 Maarten van Steen and Andrew S. Tanenbaum, Distributed Systems: Principles and Paradigms, 4.01 (Maarten van Steen, 2023) https://libgen.li/file.php?md5=d46eeafcf46684d5421d07300af499edAnd it provides a very nice introduction into the topic. Something I liked really from the book, how it starts with distinguishing between convoluted terms like distributed systems and decentralized systems.</description>
-    </item>
-    
-  </channel>
-</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Writing on mashally</title>
+    <link>https://blackaly.github.io/tags/writing/</link>
+    <description>Recent content in Writing on mashally</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Dec 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blackaly.github.io/tags/writing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Writing Clearly</title>
+      <link>https://blackaly.github.io/articles/on-writing-clearly/</link>
+      <pubDate>Fri, 15 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/articles/on-writing-clearly/</guid>
+      <description>&lt;p&gt;Clear writing is clear thinking made visible. When our prose is confused, it is usually because our ideas are confused. The discipline of writing forces us to discover what we actually believe.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-enemy-of-clarity&#34;&gt;The Enemy of Clarity&lt;/h2&gt;&#xA;&lt;p&gt;The chief enemy of clear writing is pretension. We reach for impressive words when simple ones would serve. We construct elaborate sentences to hide the thinness of our thought. We mistake obscurity for depth.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

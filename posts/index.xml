@@ -1,11 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>المقالات on قالب شيكا</title>
-    <link>/posts/</link>
-    <description>Recent content in المقالات on قالب شيكا</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>All Posts on mashally</title>
+    <link>https://blackaly.github.io/posts/</link>
+    <description>Recent content in All Posts on mashally</description>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blackaly.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On the Nature of Reading</title>
+      <link>https://blackaly.github.io/posts/on-the-nature-of-reading/</link>
+      <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/on-the-nature-of-reading/</guid>
+      <description>&lt;p&gt;Reading is not merely the act of decoding symbols on a page. It is a conversation across time, a meeting of minds separated by centuries yet united in thought.&lt;span class=&#34;sidenote-wrapper&#34;&gt;&lt;sup class=&#34;sidenote-ref&#34;&gt;1&lt;/sup&gt;&lt;span class=&#34;sidenote sidenote-right&#34;&gt;1. really?&lt;/span&gt;&lt;/span&gt;&#xD;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;When we read the ancients, we do not simply consume their words. We enter into dialogue with them. We question, we agree, we dispute. The text becomes a living thing, breathing new meaning with each encounter.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-lost-art-of-slow-reading&#34;&gt;The Lost Art of Slow Reading&lt;/h2&gt;&#xA;&lt;p&gt;Our age has forgotten how to read slowly.&lt;span class=&#34;sidenote-wrapper&#34;&gt;&lt;sup class=&#34;sidenote-ref&#34;&gt;2&lt;/sup&gt;&lt;span class=&#34;sidenote sidenote-left&#34;&gt;2. Great&lt;/span&gt;&lt;/span&gt;&#xD;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Simplicity in Design</title>
+      <link>https://blackaly.github.io/posts/simplicity-in-design/</link>
+      <pubDate>Wed, 10 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/simplicity-in-design/</guid>
+      <description>&lt;p&gt;The pursuit of simplicity is not a retreat from complexity. It is the hard-won result of understanding what is essential and having the courage to remove everything else.&lt;/p&gt;&#xA;&lt;p&gt;A simple design does not happen by accident. It requires more thought, more refinement, more willingness to discard what does not serve the whole.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-tradition-of-less&#34;&gt;The Tradition of Less&lt;/h2&gt;&#xA;&lt;p&gt;The great craftsmen understood this. A Shaker chair. A Japanese tea bowl. A Roman arch. Each achieves its beauty not through addition but through restraint.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Morning Reflections</title>
+      <link>https://blackaly.github.io/posts/morning-reflections/</link>
+      <pubDate>Fri, 05 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/morning-reflections/</guid>
+      <description>&lt;p&gt;The early hours belong to thought. Before the day&amp;rsquo;s demands crowd in, there is space for reflection. The mind, rested and clear, moves freely among ideas.&lt;/p&gt;&#xA;&lt;p&gt;I have made it my habit to rise before dawn. In the quiet darkness, with only a lamp for company, I read and I write. These hours are my own.&lt;/p&gt;&#xA;&lt;h2 id=&#34;on-routine&#34;&gt;On Routine&lt;/h2&gt;&#xA;&lt;p&gt;Routine is not the enemy of creativity. It is its foundation. The writer who waits for inspiration will write little. The one who sits down each morning, regardless of mood, will produce a body of work.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Note on Correspondence</title>
+      <link>https://blackaly.github.io/posts/note-on-correspondence/</link>
+      <pubDate>Thu, 28 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/note-on-correspondence/</guid>
+      <description>&lt;p&gt;The art of letter-writing has nearly vanished. Email has made communication instant but has robbed it of weight. We dash off messages without thought, knowing they cost us nothing.&lt;/p&gt;&#xA;&lt;p&gt;A letter, by contrast, demands effort. The choice of paper, the forming of words by hand, the journey through the post—all these invest the message with significance. The recipient knows that time and care went into its making.&lt;/p&gt;&#xA;&lt;p&gt;I maintain correspondences with a handful of friends. Our letters are slow, sometimes months apart. But each one is considered. Each one matters.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ملاحظات على الشعر</title>
+      <link>https://blackaly.github.io/posts/arabic-poetry-note/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/posts/arabic-poetry-note/</guid>
+      <description>&lt;p&gt;الشعر العربي تقليد عريق يمتد لأكثر من ألف وخمسمائة عام. في قصائده نجد الحكمة والجمال والحقيقة الإنسانية.&lt;/p&gt;&#xA;&lt;p&gt;القصيدة الجيدة لا تُقرأ مرة واحدة. تُقرأ وتُعاد قراءتها. في كل مرة نكتشف شيئاً جديداً.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
