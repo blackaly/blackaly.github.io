@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thoughts on mashally</title>
+    <link>https://blackaly.github.io/thoughts/</link>
+    <description>Recent content in Thoughts on mashally</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 14 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blackaly.github.io/thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Third Thought</title>
+      <link>https://blackaly.github.io/thoughts/third-thought/</link>
+      <pubDate>Fri, 14 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/thoughts/third-thought/</guid>
+      <description>&lt;p&gt;Better to keep a small habit alive than chase a perfect plan.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second Thought</title>
+      <link>https://blackaly.github.io/thoughts/second-thought/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/thoughts/second-thought/</guid>
+      <description>&lt;p&gt;If a sentence is unclear, the thought behind it is probably unfinished.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>First Thought</title>
+      <link>https://blackaly.github.io/thoughts/first-thought/</link>
+      <pubDate>Wed, 12 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/thoughts/first-thought/</guid>
+      <description>&lt;p&gt;Small ideas are still worth writing down. They keep the day from blurring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://blackaly.github.io/thoughts/heelo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://blackaly.github.io/thoughts/heelo/</guid>
+      <description>&lt;p&gt;asdsd&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
