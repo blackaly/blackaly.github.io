@@ -170,7 +170,7 @@ a:hover {
 .hero-image {
     display: block;
     width: 100%;
-    max-width: 200px;
+    max-width: 500px;
     height: auto;
     margin: 0 auto;
     border: 5px solid var(--color-border);
