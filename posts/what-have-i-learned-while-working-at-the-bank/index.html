@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What have I learned while working at the bank: 1 | mashally</title>
+    <meta name="description" content="personal blog">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+<body>
+    <div class="site-notice">
+    <div class="container">
+        <span class="site-notice-text">
+            This website is under development and not finished yet. Suggestions are welcome - send them
+            <a href="https://www.admonymous.co/ali-muhammad" class="site-notice-link" rel="noopener">anonymously</a>.
+        </span>
+    </div>
+</div>
+<header class="site-header">
+    <div class="container">
+        <h1 class="site-title">
+            <a href="https://blackaly.github.io/">mashally</a>
+        </h1>
+        
+        <nav class="site-nav">
+            <a href="/posts/" class="nav-link">all posts</a><span class="nav-separator">·</span><a href="/thoughts/" class="nav-link">thoughts</a><span class="nav-separator">·</span><a href="/books/" class="nav-link">books</a><span class="nav-separator">·</span><a href="/anthology/" class="nav-link">anthology</a><span class="nav-separator">·</span><a href="https://www.admonymous.co/ali-muhammad" class="nav-link">leave a message</a>
+        </nav>
+    </div>
+</header>
+
+    
+    <main class="main-content">
+        <div class="content-wrapper">
+            
+<article class="container single-post" >
+    <header class="post-header">
+        <h1 class="post-title" >What have I learned while working at the bank: 1</h1>
+        <time class="post-date" datetime="2026-01-03">Saturday, 03 January 2026</time>
+    </header>
+    
+    <div class="post-content prose drop-cap" >
+        <p>Actually I hadn&rsquo;t the change to work for the banking sector before, and when I imagine people in a classic suit sitting behind their desks in banks, I thought they were doing things I would never understand for the rest of my life. But in reality, banking is routine work as I observed until now and I cannot fully guarantee this because (there is no <strong>collaterals</strong> for these ideas).</p>
+<p>In my current job at <strong>ALEXBANK</strong> I&rsquo;ve met a lot of people who have shared with me a lot of knowledge about a lot of concepts and different topics, and that&rsquo;s fired something inside me that gave me a real passion for reading about <strong>money</strong>, actually the current image in my main page reflects my current focus on money and gold. I still have no deep knowledge, or well-connected knowledge about how money works, but anyway, money is the only thing that keeps restoring my faith that there is no absolute justice in our world: some people suffer, while others continue to grow richer. Regardless of this philosophy, I need to share what I have learnt in banking as an Integration Engineer at <strong>ALEXBANK</strong>.</p>
+<h1 id="everything-is-really-connected">Everything is really connected.</h1>
+<p>Ok, before I explain in more details my idea here, let&rsquo;s first define what&rsquo;s the meaning of <strong>channel</strong> in the current context.</p>
+<blockquote>
+<p>A <em>channel</em> is any delivery platform or access interface through which customers or external systems initiate, inquire about, or receive banking services, by integrating with the core-banking system via standard APIs, messaging, or middleware. Channels typically include ATMs, branches, internet banking, mobile banking, POS, contact centers, and third-party applications, all of which consume core-banking services through an integration layer.</p></blockquote>
+<p>And as an <strong>Integration engineer</strong> you deal with different channels, and see how things are really connected to each other, this lets your mind, suddenly, realize that a core banking system is actually  tightly-coupled systems. If one component have a performance issue, the entire system will be effected.</p>
+<p>So, that&rsquo;s why every component must be orchestrated in a perfect way. Just imagine if something were to happen to an <strong>RDBMS</strong> like Oracle —which banks rely on because of its ability to process a lot of transactions in a small amount of time— I wouldn&rsquo;t be exaggerated if I said that such a failure could cause a bank to go bankrupt![1]<span class="sidenote-wrapper"><sup class="sidenote-ref"></sup><span class="sidenote sidenote-right"> [1] That&rsquo;s why I see banks must hire a good programmers if they plan to expand their business or deploy a lot of ATMs on the street, and this will give the bank more customers, and more customer mean more traffic, and with more traffic, you need strong integration layer.</span></span>
+</p>
+<h1 id="how-banks-defines-their-customers">How banks defines their customers?</h1>
+<p><strong>CIF</strong>! Your entire identity represented by a unique combination of numbers and is known as <strong>CIF</strong> (Customer Information File). The CIF stores:</p>
+<ul>
+<li><strong>Identity data</strong> (Name, National ID, Date of birth, etc..)</li>
+<li><strong>Contact details</strong> (Mobile number, Email address, physical address)</li>
+<li><strong>Customer segment</strong> (Retail, Corporate, etc..)</li>
+<li><strong>KYC / Risk profile</strong></li>
+<li><strong>Relationship links</strong> (e.g. Guarantor, Joint accounts, Related parties, …)</li>
+</ul>
+<p>I know that you —as an Egyptian citizen— may not realize how much data and information banks hold about you, and weather you agree with it or not, once you accepted the bank&rsquo;s privacy policy you agreed to this data collection, and to be honest, this is standard practice across all banks.</p>
+<p>Anyway, <strong>CIF</strong> is so important for identifying users in banking systems. For example, when a channel sends a request and needs to <strong>validate</strong> or <strong>identify</strong> a user or a customer, it does so using the <strong>CIF</strong> before allowing any transaction, such as withdrawing cash from an ATM, or paying a bill.</p>
+<p>Therefore, every request must be  identified and validated against that <strong>CIF</strong>.</p>
+<h1 id="what-are-we-doing-as-an-integration-team">What are we doing as an integration team?</h1>
+<p>All the thoughts I mentioned above go through our layer, every payment, every loan, literally everything! Regardless of the tools used, this layer connects the core banking system with different channels. For example, if the <strong>CRM</strong> channel needs to retrieve data from the <strong>core</strong>, it must go through us. If a customer needs to withdraw money from an <strong>ATM</strong> it must also go through us.</p>
+<p>So, if the middleware misroutes anything, even a single request, the consequences could be severe. (<strong>As my manager said</strong>).</p>
+<p><strong>To Be Continued</strong></p>
+
+    </div>
+    
+    
+    <footer class="post-footer">
+        <div class="post-tags">
+            
+            <a href="/tags/integration" class="tag">integration</a>
+            
+            <a href="/tags/money" class="tag">money</a>
+            
+        </div>
+    </footer>
+    
+    
+    <nav class="post-navigation">
+        
+        <a href="https://blackaly.github.io/posts/what-happend-to-people/" class="nav-prev">← What happened to the people??</a>
+        
+        
+    </nav>
+</article>
+
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+    <div class="container">
+        <p class="copyright">
+            &copy; 2026 mashally
+        </p>
+    </div>
+</footer>
+
+    <script src="/js/filter.js"></script>
+</body>
+</html>

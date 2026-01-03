@@ -280,6 +280,16 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
+.post-content ul,
+.post-content ol {
+    margin: 0 0 var(--spacing-md);
+    padding-left: 1.4rem;
+}
+
+.post-content li {
+    margin-bottom: 0.25rem;
+}
+
 .post-content h2 {
     margin-top: var(--spacing-xl);
     margin-bottom: var(--spacing-md);
