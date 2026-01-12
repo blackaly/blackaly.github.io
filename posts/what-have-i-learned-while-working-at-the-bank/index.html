@@ -39,11 +39,13 @@
 <article class="container single-post" >
     <header class="post-header">
         <h1 class="post-title" >What have I learned while working at the bank: 1</h1>
-        <time class="post-date" datetime="2026-01-03">Saturday, 03 January 2026</time>
+        <time class="post-date" datetime="2026-01-12">Monday, 12 January 2026</time>
     </header>
     
     <div class="post-content prose drop-cap" >
-        <p>Actually I hadn&rsquo;t the change to work for the banking sector before, and when I imagine people in a classic suit sitting behind their desks in banks, I thought they were doing things I would never understand for the rest of my life. But in reality, banking is routine work as I observed until now and I cannot fully guarantee this because (there is no <strong>collaterals</strong> for these ideas).</p>
+        <p>Actually I hadn&rsquo;t the chance to work for the banking sector before, and when I imagine people in a classic suit sitting behind their desks in banks, I thought they were doing things I would never understand for the rest of my life.</p>
+<p>And actually I feel like this bud here below. <img src="/images/posts/iam-the-banker.png" alt="image">
+But in reality, banking is routine work as I observed until now and I cannot fully guarantee this because (there is no <strong>collaterals</strong> for these ideas yet).</p>
 <p>In my current job at <strong>ALEXBANK</strong> I&rsquo;ve met a lot of people who have shared with me a lot of knowledge about a lot of concepts and different topics, and that&rsquo;s fired something inside me that gave me a real passion for reading about <strong>money</strong>, actually the current image in my main page reflects my current focus on money and gold. I still have no deep knowledge, or well-connected knowledge about how money works, but anyway, money is the only thing that keeps restoring my faith that there is no absolute justice in our world: some people suffer, while others continue to grow richer. Regardless of this philosophy, I need to share what I have learnt in banking as an Integration Engineer at <strong>ALEXBANK</strong>.</p>
 <h1 id="everything-is-really-connected">Everything is really connected.</h1>
 <p>Ok, before I explain in more details my idea here, let&rsquo;s first define what&rsquo;s the meaning of <strong>channel</strong> in the current context.</p>
@@ -65,8 +67,10 @@
 <p>Anyway, <strong>CIF</strong> is so important for identifying users in banking systems. For example, when a channel sends a request and needs to <strong>validate</strong> or <strong>identify</strong> a user or a customer, it does so using the <strong>CIF</strong> before allowing any transaction, such as withdrawing cash from an ATM, or paying a bill.</p>
 <p>Therefore, every request must be  identified and validated against that <strong>CIF</strong>.</p>
 <h1 id="what-are-we-doing-as-an-integration-team">What are we doing as an integration team?</h1>
-<p>All the thoughts I mentioned above go through our layer, every payment, every loan, literally everything! Regardless of the tools used, this layer connects the core banking system with different channels. For example, if the <strong>CRM</strong> channel needs to retrieve data from the <strong>core</strong>, it must go through us. If a customer needs to withdraw money from an <strong>ATM</strong> it must also go through us.</p>
-<p>So, if the middleware misroutes anything, even a single request, the consequences could be severe. (<strong>As my manager said</strong>).</p>
+<p>All the thoughts I mentioned above go through our layer, every payment, every loan, literally everything! Regardless of the tools used, this layer connects the core banking system with different channels. For example, if the <strong>CRM</strong> channel needs to retrieve data from the <strong>core</strong>[2]<span class="sidenote-wrapper"><sup class="sidenote-ref"></sup><span class="sidenote sidenote-right"> [2] <strong>very brief</strong>: The core team who keeps customer, account, and balance data accurate for every app and channel.</span></span>
+
+, it must go through us. If a customer needs to withdraw money from an <strong>ATM</strong> it must also go through us. If we want to build a new mobile application that allows customers to easily check their balance and transfer money in or out, the mobile app requires clean JSON, and these systems used to use SOAP. Therefore, we need to transform that data to another format, from SOAP to JSON, and <strong>orchestrate</strong> the requests coming from the mobile application. This is where our role comes in, this integration layer is where our core responsibility lives, <strong>orchestration</strong>.</p>
+<p>So, if our layer, the middleware, misroutes anything, even a single request, the consequences could be severe. (<strong>As my manager said</strong>).</p>
 <p><strong>To Be Continued</strong></p>
 
     </div>

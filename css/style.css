@@ -280,6 +280,14 @@ a:hover {
     margin-bottom: var(--spacing-md);
 }
 
+.post-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: var(--spacing-md) auto;
+    border: 5px solid var(--color-border);
+}
+
 .post-content ul,
 .post-content ol {
     margin: 0 0 var(--spacing-md);
