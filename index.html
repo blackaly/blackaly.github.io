@@ -12,15 +12,28 @@
     <link rel="stylesheet" href="/css/style.css">
     
 </head>
-<body>
+<body class="home">
     <header class="site-header">
     <div class="container">
         <h1 class="site-title">
             <a href="https://blackaly.github.io/">mashally</a>
         </h1>
         
-        <nav class="site-nav">
-            <a href="/posts/" class="nav-link">all posts</a><span class="nav-separator">·</span><a href="/thoughts/" class="nav-link">thoughts</a><span class="nav-separator">·</span><a href="/books/" class="nav-link">books</a><span class="nav-separator">·</span><a href="/anthology/" class="nav-link">anthology</a><span class="nav-separator">·</span><a href="https://www.admonymous.co/ali-muhammad" class="nav-link">leave a message</a>
+        <nav class="site-nav" aria-label="Main navigation">
+            
+            
+            
+            <a href="/posts/" class="nav-link">all posts</a>
+            
+            
+            <a href="/thoughts/" class="nav-link">thoughts</a>
+            
+            
+            <a href="/books/" class="nav-link">books</a>
+            
+            
+            <a href="/anthology/" class="nav-link">anthology</a>
+            
         </nav>
     </div>
 </header>
@@ -29,68 +42,96 @@
     <main class="main-content">
         <div class="content-wrapper">
             
-<div class="container">
+<div class="container home-index">
     
-    <section class="quote-section">
-        
-        <img class="hero-image" src="/images/the-money-illusion-header-1250x300-1.png" alt="me">
-        
-        
-    </section>
-
-    
+    <p class="site-introduction">computer science, money, musings on philosophy, literature, and the examined life</p>
     
 
     
-    <section class="section">
-        <h2 class="section-heading">Recent Posts</h2>
-        <div class="language-filter">
+    <figure class="quote-section">
+        <img class="hero-image" src="/images/the-money-illusion-header-1250x300-1.png" alt="Detail of a classical painting">
+    </figure>
+    
+
+    
+
+    <div class="home-columns">
+        <section class="section writing-index" aria-labelledby="recent-heading">
+            <h2 class="section-heading" id="recent-heading">Recent writing</h2>
+            <div class="language-filter">
     <span class="filter-label">Filter:</span>
     <button class="filter-btn active" data-lang="all">All</button>
     <button class="filter-btn" data-lang="EN">English</button>
     <button class="filter-btn" data-lang="AR">العربية</button>
 </div>
 
-        <div class="posts-list">
-            
-            <article class="post-item" data-lang="EN">
-                <span class="language-badge">[EN]</span>
-                <a href="https://blackaly.github.io/posts/what-have-i-learned-while-working-at-the-bank/" class="post-link" >What have I learned while working at the bank: 1</a>
-                <time class="post-date">12 Jan 2026</time>
-            </article>
-            
-            <article class="post-item" data-lang="EN">
-                <span class="language-badge">[EN]</span>
-                <a href="https://blackaly.github.io/posts/what-happend-to-people/" class="post-link" >What happened to the people??</a>
-                <time class="post-date">27 Dec 2025</time>
-            </article>
-            
-            <article class="post-item" data-lang="AR">
-                <span class="language-badge">[AR]</span>
-                <a href="https://blackaly.github.io/posts/os-ar-1/" class="post-link" lang="ar">نظم التشغيل: 1</a>
-                <time class="post-date">20 Dec 2025</time>
-            </article>
-            
-        </div>
-    </section>
+            <div class="posts-list home-posts">
+                
+                <article class="post-item" data-lang="EN">
+                    <span class="language-badge">[EN]</span>
+                    <a href="/posts/what-have-i-learned-while-working-at-the-bank/" class="post-link" >What have I learned while working at the bank: 1</a>
+                    <time class="post-date" datetime="2026-01-12">12 January 2026</time>
+                </article>
+                
+                <article class="post-item" data-lang="EN">
+                    <span class="language-badge">[EN]</span>
+                    <a href="/posts/what-happend-to-people/" class="post-link" >What happened to the people??</a>
+                    <time class="post-date" datetime="2025-12-27">27 December 2025</time>
+                </article>
+                
+                <article class="post-item" data-lang="AR">
+                    <span class="language-badge">[AR]</span>
+                    <a href="/posts/os-ar-1/" class="post-link" lang="ar" dir="rtl">نظم التشغيل: 1</a>
+                    <time class="post-date" datetime="2025-12-20">20 December 2025</time>
+                </article>
+                
+            </div>
+            <a class="archive-link" href="/posts/">All posts <span aria-hidden="true">→</span></a>
+        </section>
+
+        
+        <section class="section collection-index" aria-labelledby="collections-heading">
+            <h2 class="section-heading" id="collections-heading">Collections</h2>
+            <ul class="goodies-links">
+                
+                <li>
+                    <a href="/thoughts/">thoughts</a>
+                    <p>Short notes and passing thoughts.</p>
+                </li>
+                
+                <li>
+                    <a href="/books/">books and bibliography</a>
+                    <p>Reading, books, and the notes they leave behind.</p>
+                </li>
+                
+                <li>
+                    <a href="/anthology/">anthologies</a>
+                    <p>Passages and quotations worth keeping.</p>
+                </li>
+                
+                <li>
+                    <a href="/youtube/">youtube list</a>
+                    <p>A small collection of videos to return to.</p>
+                </li>
+                
+                <li>
+                    <a href="/cinema/">cinema</a>
+                    <p>Films, series, and anime.</p>
+                </li>
+                
+            </ul>
+        </section>
+        
+    </div>
+
+    <div class="page-ornament" aria-hidden="true">⁂</div>
 
     
-    
-    <section class="section">
-        <h2 class="section-heading">Goodies</h2>
-        <div class="goodies-links">
-            <a href="/thoughts/">thoughts</a> / <a href="/books/">books and bibliography</a> / <a href="/anthology/">anthologies</a> / <a href="/youtube/">youtube list</a> / <a href="/cinema/">cinema</a>
-        </div>
+    <section class="home-contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Correspondence</h2>
+        <div class="contact-info"><a href="mailto:ali.muhammad.mashally@gmail.com">ali.muhammad.mashally@gmail.com</a></div>
     </section>
     
-
-    
-    <section class="section">
-        <h2 class="section-heading">Contact</h2>
-        <div class="contact-info">
-            <a href="mailto:ali.muhammad.mashally@gmail.com">ali.muhammad.mashally@gmail.com</a>
-        </div>
-    </section>
 </div>
 
         </div>
