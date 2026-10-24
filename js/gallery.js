@@ -10,6 +10,13 @@
         const dialog = gallery.querySelector('[data-gallery-viewer]');
         const image = dialog.querySelector('[data-viewer-image]');
         const caption = dialog.querySelector('[data-viewer-caption]');
+        const details = dialog.querySelector('.gallery-viewer-details');
+        const description = dialog.querySelector('[data-viewer-description]');
+        const dimensions = dialog.querySelector('[data-viewer-dimensions]');
+        const format = dialog.querySelector('[data-viewer-format]');
+        const original = dialog.querySelector('[data-viewer-original]');
+        const viewport = dialog.querySelector('.gallery-viewer-image');
+        const zoom = dialog.querySelector('[data-viewer-zoom]');
         const status = dialog.querySelector('[data-viewer-status]');
         const previous = dialog.querySelector('[data-viewer-prev]');
         const next = dialog.querySelector('[data-viewer-next]');
@@ -56,16 +63,50 @@
             if (focusPage) pageNumbers.querySelector('[aria-current]').focus({ preventScroll: true });
         }
 
+        function setZoom(enlarged) {
+            if (enlarged && (!image.complete || !image.naturalWidth)) return;
+            viewport.classList.toggle('is-zoomed', enlarged);
+            zoom.setAttribute('aria-pressed', String(enlarged));
+            zoom.textContent = enlarged ? 'Fit image' : 'Zoom in';
+            viewport.scrollTo({ left: enlarged ? viewport.clientWidth / 2 : 0, top: enlarged ? viewport.clientHeight / 2 : 0, behavior: 'instant' });
+        }
+
+        function updateDimensions() {
+            dimensions.textContent = image.naturalWidth ? `${image.naturalWidth} × ${image.naturalHeight} px` : 'Unavailable';
+            zoom.setAttribute('aria-disabled', String(!image.naturalWidth));
+        }
+
+        image.addEventListener('load', updateDimensions);
+        image.addEventListener('error', updateDimensions);
+        zoom.addEventListener('click', () => setZoom(!viewport.classList.contains('is-zoomed')));
+        image.addEventListener('click', () => setZoom(!viewport.classList.contains('is-zoomed')));
+
         function showImage(index) {
             const focusedControl = document.activeElement;
             current = Math.max(0, Math.min(index, links.length - 1));
             const link = links[current];
+            setZoom(false);
+            dimensions.textContent = 'Loading…';
+            zoom.setAttribute('aria-disabled', 'true');
             image.alt = link.querySelector('img').alt;
             image.src = link.href;
+            original.href = link.href;
+            const extension = new URL(link.href).pathname.split('.').pop().toLowerCase();
+            format.textContent = { jpg: 'JPEG', jpeg: 'JPEG', png: 'PNG', webp: 'WebP', gif: 'GIF', avif: 'AVIF', bmp: 'BMP' }[extension] || '';
+            dialog.querySelector('[data-viewer-format-row]').hidden = !format.textContent;
             const source = link.closest('.gallery-slide').querySelector('figcaption');
             caption.replaceChildren();
             if (source) caption.append(...Array.from(source.childNodes, (node) => node.cloneNode(true)));
-            caption.hidden = !source;
+            if (!caption.querySelector('h2')) {
+                const heading = document.createElement('h2');
+                heading.textContent = `Image ${current + 1}`;
+                caption.prepend(heading);
+            }
+            description.textContent = image.alt;
+            description.hidden = !image.alt || image.alt === 'Exhibition image' || Boolean(source?.textContent.includes(image.alt));
+            details.scrollTop = 0;
+            dialog.querySelector('.gallery-viewer-body').scrollTop = 0;
+            if (image.complete) updateDimensions();
             status.textContent = `${current + 1} of ${links.length}`;
             previous.disabled = current === 0;
             next.disabled = current === links.length - 1;
@@ -100,6 +141,8 @@
         dialog.querySelector('[data-viewer-close]').addEventListener('click', () => dialog.close());
         dialog.addEventListener('keydown', (event) => {
             if (event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+            // Let arrow keys pan a zoomed image when its scroll region has focus.
+            if (event.target === viewport && viewport.classList.contains('is-zoomed')) return;
             const destinations = { ArrowLeft: current - 1, ArrowRight: current + 1, Home: 0, End: links.length - 1 };
             if (!(event.key in destinations)) return;
             event.preventDefault();

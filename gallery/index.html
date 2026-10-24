@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.css?v=fc69925bc3d3ad0415f39576fa6ce7584eee430b6bda81ff7077ac433e271697">
+    <link rel="stylesheet" href="/css/style.css?v=16a72c47766d6ec5c60813b1963fdb806dda68239ce94d66021197240ebdc722">
     
 </head>
-<body>
+<body class="gallery">
     <header class="site-header">
     <div class="container">
         <p class="site-title">
@@ -475,11 +475,23 @@
             <dialog class="gallery-viewer" aria-label="Exhibition image viewer" data-gallery-viewer>
                 <div class="gallery-viewer-header">
                     <p class="gallery-status" role="status" aria-atomic="true" data-viewer-status></p>
-                    <button class="gallery-step" type="button" data-viewer-close autofocus>Close <span aria-hidden="true">×</span></button>
+                    <div class="gallery-viewer-actions">
+                        <button class="gallery-step" type="button" data-viewer-zoom aria-pressed="false" aria-controls="gallery-image-view">Zoom in</button>
+                        <button class="gallery-step" type="button" data-viewer-close autofocus>Close <span aria-hidden="true">×</span></button>
+                    </div>
                 </div>
-                <figure>
-                    <div class="gallery-viewer-image"><img data-viewer-image alt=""></div>
-                    <figcaption class="gallery-viewer-caption" data-viewer-caption hidden></figcaption>
+                <figure class="gallery-viewer-body">
+                    <div class="gallery-viewer-image" id="gallery-image-view" tabindex="0" role="region" aria-label="Image view. When zoomed, scroll to explore the image."><img data-viewer-image alt=""></div>
+                    <figcaption class="gallery-viewer-details">
+                        <p class="gallery-details-label">Image details</p>
+                        <div class="gallery-viewer-caption" data-viewer-caption></div>
+                        <p class="gallery-viewer-description" data-viewer-description hidden></p>
+                        <dl class="gallery-file-details">
+                            <div><dt>Dimensions</dt><dd data-viewer-dimensions></dd></div>
+                            <div data-viewer-format-row><dt>File type</dt><dd data-viewer-format></dd></div>
+                        </dl>
+                        <a class="gallery-original-link" data-viewer-original target="_blank" rel="noopener">Open full-size image <span aria-hidden="true">↗</span></a>
+                    </figcaption>
                 </figure>
                 <div class="gallery-viewer-controls">
                     <button class="gallery-step gallery-viewer-arrow" type="button" data-viewer-prev aria-label="Previous image" title="Previous image"><span aria-hidden="true">←</span></button>
@@ -506,7 +518,7 @@
     <script src="/js/filter.js?v=f7227b0cbf50c41ac4af78f48f9c043fdb6ae95710f8815716e864ce64f95233"></script>
     
     
-    <script src="/js/gallery.js?v=5f8f25a17c5a47ba856c7280b53c5645f6ff21876ccf714cbc0730f4f7b209ae" defer></script>
+    <script src="/js/gallery.js?v=19200f99867ee0ebba64ca07f63ff5263216a9b3577d3fced797f28a5d6b427c" defer></script>
     
 </body>
 </html>
