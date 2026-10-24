@@ -391,11 +391,13 @@ button:focus-visible {
     text-align: start;
 }
 
-.post-content p {
+.post-content p,
+.thought-body p {
     margin-bottom: var(--spacing-md);
 }
 
-.post-content img {
+.post-content img,
+.thought-body img {
     display: block;
     max-width: 100%;
     height: auto;
@@ -476,6 +478,71 @@ button:focus-visible {
 .post-tags .tag {
     font-size: 0.8rem;
     margin-right: var(--spacing-sm);
+}
+
+/* ===== Poetry & Quotations ===== */
+.literary-block {
+    max-inline-size: 100%;
+    min-inline-size: 0;
+    margin: 1.5rem 0;
+    padding: clamp(1rem, 3vw, 1.75rem);
+    border: 1px solid var(--color-border);
+    border-inline-start: 3px solid var(--color-link);
+    background: rgba(255, 250, 222, 0.25);
+    font-family: var(--font-serif);
+    font-size: 1.05em;
+    line-height: 1.9;
+    text-align: start;
+    overflow-wrap: anywhere;
+}
+
+.literary-block--poem {
+    text-align: center;
+    line-height: 2.1;
+}
+
+.literary-block .literary-title {
+    margin-block-end: 1rem;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.literary-block .literary-text {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-style: normal;
+    text-align: inherit;
+}
+
+.literary-block .literary-text p {
+    margin: 0 0 1em;
+}
+
+.literary-block .literary-text > :last-child {
+    margin-bottom: 0;
+}
+
+.drop-cap .literary-block p:first-of-type::first-letter {
+    float: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.literary-block .literary-credit {
+    margin-block-start: 1rem;
+    padding-block-start: 0.65rem;
+    border-block-start: 1px dotted var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.literary-credit cite {
+    font-style: normal;
 }
 
 /* ===== Post Navigation ===== */
