@@ -944,6 +944,7 @@ button:focus-visible {
 
 .thought-meta {
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     gap: var(--spacing-sm);
     font-size: 0.85rem;
@@ -958,6 +959,58 @@ button:focus-visible {
 
 .thought-date {
     letter-spacing: 0.02em;
+    white-space: nowrap;
+}
+
+.thought-share {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem;
+    max-width: 100%;
+    font-family: var(--font-serif);
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: start;
+}
+
+.thought-copy-link {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid var(--color-border);
+    background: transparent;
+    color: var(--color-link);
+    font: inherit;
+    cursor: pointer;
+}
+
+.thought-copy-link:hover {
+    background: rgba(133, 91, 25, 0.08);
+}
+
+.thought-copy-status {
+    color: var(--color-text-muted);
+}
+
+.thought-share-url {
+    flex-basis: 100%;
+    width: min(24rem, 100%);
+    min-width: 0;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--color-border);
+    background: rgba(255, 250, 222, 0.25);
+    color: var(--color-text);
+    font: inherit;
+}
+
+.thought-share-url:focus-visible {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+}
+
+.thought-single-share {
+    display: flex;
+    justify-content: center;
+    margin-block-start: 0.75rem;
 }
 
 .thought-body {
