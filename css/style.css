@@ -1,3 +1,35 @@
+@font-face {
+    font-family: "Amiri";
+    src: url("../fonts/amiri/Amiri-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("../fonts/amiri/Amiri-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("../fonts/amiri/Amiri-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Amiri";
+    src: url("../fonts/amiri/Amiri-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
 /* ===== CSS Variables ===== */
 :root {
     --color-background: #eee0b6;
@@ -184,6 +216,50 @@ button:focus-visible {
     font-style: italic;
     line-height: 1.7;
     text-wrap: pretty;
+}
+
+/* ===== Homepage Painting Banner ===== */
+.home-banner {
+    width: 100%;
+    margin: 1.75rem 0 2.75rem;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-banner-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 2.4 / 1;
+    overflow: hidden;
+    background: #e6dbc0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-banner-frame img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.home-banner-caption {
+    min-height: 1.5em;
+    margin-top: 0.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--color-text-muted);
+    font-family: var(--font-serif);
+    font-size: 0.75rem;
+    font-style: italic;
+    line-height: 1.5;
+    text-align: right;
 }
 
 .home-columns {
